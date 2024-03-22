@@ -12,11 +12,11 @@ const Home = () => {
     <div id="home">
       {!isMobileMode &&
         <>
-          <div style={{ height:'200px', width:'100%' }}>&nbps;</div>
-          <div className="main-video">
-            <video style={{ width: '100%' }} autoplay="autoplay" loop="loop" playsinline="" muted="muted">
+          <div style={{ height:'160px', width:'100%' }}></div>
+          <div className="main-video" style={{ backgroundColor: 'gray' }}>
+            {/* <video style={{ width: '100%' }} autoplay="autoplay" loop="loop" playsinline="" muted="muted">
                 <source src={mainVideo} type="video/mp4" />
-            </video>
+            </video> */}
           </div>
         </>
       }

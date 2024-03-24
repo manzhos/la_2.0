@@ -2,6 +2,7 @@ import React from 'react';
 import './css/App.css';
 import { laRoutes } from './routes';
 import Menu from './component/Menu'
+import Footer from './component/Footer'
 
 function App() {
   const routes = laRoutes();
@@ -9,6 +10,7 @@ function App() {
     <div className="App">
       <Menu />
       {routes}
+      <Footer />
     </div>
   );
 }

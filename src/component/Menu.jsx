@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import AppBar from '@mui/material/AppBar';
 import Button from '@mui/material/Button';
 import Toolbar from '@mui/material/Toolbar';
-import logo from '../puiblic/assets/la-logo_2.svg';
+import logo from '../public/assets/la-logo_2.svg';
 import { theme } from './Theme';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
@@ -73,8 +73,12 @@ const DesktopNavigation = () => {
     setValue(newValue);
   };
   return (
-    <div id="MenuContainer" className="wrap-menu">
-      <div>
+    <div id="MenuContainer" className="wrap-menu container" >
+      <div style= {{
+        display:"flex",
+        flexWrap: "wrap",
+        justifyContent: "end"
+      }}>
         <a className="menu-link"      label="Home"          href="/">Home</a>
         <a className="menu-link"      label="About"         href="/about">About</a>
         <a className="menu-link"      label="Services"      href="/services">Services</a>
@@ -82,7 +86,7 @@ const DesktopNavigation = () => {
         <a className="menu-link"      label="Press"         href="/press">Press</a>
         <a className="menu-link"      label="FAQs"          href="/faqs">FAQs</a>
       </div>
-      <a className="menu-btn-link"  label="CONSULTATION"  href="/consultation">SCHEDULE&nbsp;A&nbsp;CONSULTATION</a>
+      <a className="menu-btn-link" label="CONSULTATION"  href="/consultation">SCHEDULE&nbsp;A&nbsp;CONSULTATION</a>
     </div>
   );
 };

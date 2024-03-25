@@ -9,6 +9,7 @@ function App() {
   return (
     <div className="App">
       <Menu />
+      <div id="to_top"></div>
       {routes}
       <Footer />
     </div>

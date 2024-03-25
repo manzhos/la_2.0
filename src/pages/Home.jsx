@@ -99,22 +99,22 @@ const Home = () => {
         <h2 style={{ textAlign:"center" }}>FEATURED WORK</h2>
         <Grid container spacing={{ xs: 2, md: 3 }}>
           <Grid item xs={12} sm={4}>
-            <a href="#" >
+            <a href="/portfolio/miami_ph" >
               <img src={featureWork01} className="f-work-main"/>
             </a>
-            <a href="#" className="fw-link">Coral Gables Miami Penthouse</a>
+            <a href="/portfolio/miami_ph" className="fw-link">Coral Gables Miami Penthouse</a>
           </Grid>
           <Grid item xs={12} sm={4}>
-            <a href="#" >
+            <a href="/portfolio/luxury_villa" >
               <img src={featureWork02} className="f-work-main"/>
             </a>
-            <a href="#" className="fw-link">Luxury Modern Villa</a>
+            <a href="/portfolio/luxury_villa" className="fw-link">Luxury Modern Villa</a>
           </Grid>
           <Grid item xs={12} sm={4}>
-            <a href="#" >
+            <a href="/portfolio/kadima_resort" >
               <img src={featureWork03} className="f-work-main"/>
             </a>
-            <a href="#" className="fw-link">Kadima Lakeview Resort</a>
+            <a href="/portfolio/kadima_resort" className="fw-link">Kadima Lakeview Resort</a>
           </Grid>
         </Grid>
       </div>
@@ -185,12 +185,12 @@ const Home = () => {
             <img src={sl} className="f-work-main" />
           </Grid>
           <Grid item xs={12} sm={6}>
-            <h2>Lazzarotti INTERIOR DESIGNERS</h2>
+            <h2>LAZZAROTTI & ASSOCIATI ARCHITECTS</h2>
             <p className="main-text">
-              We believe that your home should be an experience that sweeps you away with its moments, objects, and design. Our Design Forward sensibility goes beyond the trends of today and instead creates homes that are intentional and built to last.
+              We believe that your home should be an experience that takes you away with its moments, objects, and design. Our Design Forward luxury goes beyond the trends of today and instead creates homes that are intentional and built to last forever.
             </p>
             <p className="main-text">
-              Our approach to design is rooted in simplicity but elevated by extraordinary beauty. We curate interiors that embody understated elegance and grand intimacy, creating a harmonious tension between objects. We carefully balance editing and curating to achieve that perfectly unstyled look, taking the road less traveled to create spaces that are elevated yet approachable.
+              Our approach to design is rooted around complex solutions and elevated by extraordinary beauty. We curate projects that embody understated elegance and grand intimacy, creating a harmonious tension between objects. We carefully balance editing and curating to achieve that perfectly fitting look, taking the road less traveled to create spaces that are elevated to their highest standards.
             </p>
             <div className="spacing-36">&nbsp;</div>
             <a href="#" className="main-button">About Us</a>

@@ -1,12 +1,46 @@
 import React from "react";
+import { useNavigate } from 'react-router-dom';
+
+import {
+  Box,
+  ImageList,
+  ImageListItem,
+} from '@mui/material/';
+
+
+import miami_ph       from '../public/assets/portfolio/miami_ph.jpg'
+import luxury_villa   from '../public/assets/portfolio/luxury_villa.jpg'
+import kadima_resort  from '../public/assets/portfolio/kadima_resort.jpg'
+
+const itemData = [
+  { src: miami_ph,      title: 'Coral Gables Miami Penthouse',  path: '/portfolio/miami_ph'},
+  { src: luxury_villa,  title: 'Luxury Modern Villa',           path: '/portfolio/luxury_villa'},
+  { src: kadima_resort, title: 'Kadima Lakeview Resort',        path: '/portfolio/kadima_resort'},
+
+];
 
 const Portfolio = () => {
-  const text = 'Portfolio';
+  const navigate  = useNavigate();
 
   return(
-    <div>
-      {text}
-    </div>
+    <Box className="container">
+      <div className="spacing-128">&nbsp;</div>
+      <div className="spacing-96">&nbsp;</div>
+      <h2 style={{ textAlign:"center" }}>Portfolio</h2>
+      <ImageList variant="standard" cols={3}>
+        {itemData.map((item, key) => (
+          <ImageListItem  style={{ cursor:"pointer" }} onClick={()=>{navigate(item.path)}}>
+              <img
+                srcSet={`${item.src}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                src={`${item.src}?w=164&h=164&fit=crop&auto=format`}
+                alt={item.title}
+                loading="lazy"
+              />
+              <h4>{item.title}</h4>
+          </ImageListItem>
+        ))}
+      </ImageList>
+    </Box>      
   )
 };
 

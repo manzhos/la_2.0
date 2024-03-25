@@ -1,12 +1,13 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
+
 import Home from './pages/Home'
 import About from './pages/About'
 import Services from './pages/Services'
 import Portfolio from './pages/Portfolio'
 
-import MiamiPH from './pages/portfolio/MiamiPH';
-import LuxuryVilla from './pages/portfolio/LuxuryVilla';
+import MiamiPH from './pages/portfolio/MiamiPH'
+import LuxuryVilla from './pages/portfolio/LuxuryVilla'
 import KadimaResort from './pages/portfolio/KadimaResort'
 import KadimaResortInterior from './pages/portfolio/KadimaResortInterior'
 

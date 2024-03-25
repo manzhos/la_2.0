@@ -72,6 +72,7 @@ const DesktopNavigation = () => {
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
+  
   return (
     <div id="MenuContainer" className="wrap-menu container" >
       <div style= {{

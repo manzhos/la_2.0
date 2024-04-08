@@ -86,7 +86,7 @@ const Home = () => {
               </i>
             </p>
             <div className="spacing-36">&nbsp;</div>
-            <a href="#" className="main-button">Learn More</a>
+            <a href="/services" className="main-button">Learn More</a>
           </Grid>
         </Grid>
       </div>
@@ -190,7 +190,7 @@ const Home = () => {
               Our approach to design is rooted around complex solutions and elevated by extraordinary beauty. We curate projects that embody understated elegance and grand intimacy, creating a harmonious tension between objects. We carefully balance editing and curating to achieve that perfectly fitting look, taking the road less traveled to create spaces that are elevated to their highest standards.
             </p>
             <div className="spacing-36">&nbsp;</div>
-            <a href="#" className="main-button">About Us</a>
+            <a href="/about" className="main-button">About Us</a>
           </Grid>
         </Grid>
       </div>

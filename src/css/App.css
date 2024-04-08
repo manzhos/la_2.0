@@ -257,6 +257,17 @@ h6 {
   word-wrap: break-word;
 }
 
+.arrow-list {
+  background-color: rgb(246, 247, 246);
+  padding: 10px;
+  border: 0px solid white;
+  border-radius: 30px;
+  width: 16px;
+  height: 16px;
+  margin-right: 16px;
+  cursor: pointer;
+}
+
 .spacing-18   { height: 18px;   width: 100%; }
 .spacing-24   { height: 24px;   width: 100%; }
 .spacing-36   { height: 36px;   width: 100%; }

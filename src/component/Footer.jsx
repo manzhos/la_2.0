@@ -22,12 +22,12 @@ const Footer = () => {
     <Fragment>
       <div className="spacing-96">&nbsp;</div>
       <div id="FooterMenuContainer" className="container" style={{ display: "flex", justifyContent: "center", alignItems: "center" }} >
-          <a className="menu-link"      label="Home"          href="/">FAQ</a>
-          <a className="menu-link"      label="About"         href="/about">SERVICES</a>
-          <a className="menu-link"      label="Services"      href="/services">PRESS & ARTICLES</a>
-          <a className="menu-link"      label="Portfolio"     href="/portfolio">MEDIA & DOWNLOAD</a>
-          <a className="menu-link"      label="Press"         href="/press">TESTIMONIALS</a>
-          <a className="menu-link"      label="FAQs"          href="/faqs">CONTACTS</a>
+          <a className="menu-link"      label="FAQs"          href="/faq">FAQ</a>
+          <a className="menu-link"      label="Services"      href="/services">SERVICES</a>
+          <a className="menu-link"      label="Press"         href="/press">PRESS & ARTICLES</a>
+          <a className="menu-link"      label="Media"         href="/media">MEDIA & DOWNLOAD</a>
+          <a className="menu-link"      label="Testimonials"  href="/testimonials">TESTIMONIALS</a>
+          <a className="menu-link"      label="Contacts"      href="/contact">CONTACTS</a>
       </div>				
 
       <div className="spacing-96">&nbsp;</div>

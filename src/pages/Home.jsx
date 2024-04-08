@@ -3,7 +3,6 @@ import { theme } from '../component/Theme';
 import useMediaQuery from '@mui/material/useMediaQuery';
 
 import {
-  Button,
   Grid,
 } from '@mui/material/';
 
@@ -133,7 +132,7 @@ const Home = () => {
             <h4>RIVIERA CONTEMPORARY LUXURY VILLA</h4>
           </Grid>
           <Grid item xs={12} sm={6}>
-            <h2>Kostantin Gumeniok</h2>
+            <h2>Konstantin Gumeniok</h2>
             <p className="main-text">
               We could not be happier with our experience with design studio Lazzarotti & Associati. Simone and his team were able to transform our house into a beautiful home that is warm, inviting, comfortable, and stunningly beautiful! When we first purchased the land, we knew it had great potential and vision in our minds, but had no idea where to start. From our first meeting with Simone, we knew we had selected the right team to work with. They were able to translate our ideas and inspiration images into a home that is above and beyond what we had thought possible.
             </p>

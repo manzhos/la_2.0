@@ -5,6 +5,8 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Services from './pages/Services'
 import Portfolio from './pages/Portfolio'
+import FAQ from './pages/FAQ'
+import Press from './pages/Press'
 
 import MiamiPH from './pages/portfolio/MiamiPH'
 import LuxuryVilla from './pages/portfolio/LuxuryVilla'
@@ -23,6 +25,8 @@ export const laRoutes = () => {
       <Route path="/about" element={<About />} />
       <Route path="/services" element={<Services />} />
       <Route path="/portfolio" element={<Portfolio />} />
+      <Route path="/press" element={<Press />} />
+      <Route path="/faq" element={<FAQ />} />
 
       <Route path="/portfolio/miami_ph" element={<MiamiPH />} />
       <Route path="/portfolio/luxury_villa" element={<LuxuryVilla />} />

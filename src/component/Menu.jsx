@@ -85,7 +85,7 @@ const DesktopNavigation = () => {
         <a className="menu-link"      label="Services"      href="/services">Services</a>
         <a className="menu-link"      label="Portfolio"     href="/portfolio">Portfolio</a>
         <a className="menu-link"      label="Press"         href="/press">Press</a>
-        <a className="menu-link"      label="FAQs"          href="/faqs">FAQs</a>
+        <a className="menu-link"      label="FAQs"          href="/faq">FAQs</a>
       </div>
       <a className="menu-btn-link" label="CONSULTATION"  href="/consultation">SCHEDULE&nbsp;A&nbsp;CONSULTATION</a>
     </div>

@@ -221,7 +221,7 @@ const Home = () => {
                 This is beauty by design. Download now our DESIGN MAGAZINE to take a glimpse of the world that lies behind the curtains of our STUDIO.
               </p>
               <p className="main-text">
-                <a href="#" style={{ color:"#464643" }}>DOWNLOAD NOW</a>
+                <a href="https://drive.google.com/file/d/1FroQxWwcrE2mvNX37FSVZpEk7r-FWL2P/view?usp=sharing" style={{ color:"#464643" }}>DOWNLOAD NOW</a>
               </p>
             </Grid>
           </Grid>

@@ -1,9 +1,5 @@
 import React from "react";
-import PhotoAlbum from "react-photo-album"; // https://react-photo-album.com/
 import Lightbox from "yet-another-react-lightbox"; // https://yet-another-react-lightbox.com/
-
-import { theme } from '../../component/Theme';
-import useMediaQuery from '@mui/material/useMediaQuery';
 
 import {
   Box,
@@ -122,6 +118,14 @@ const itemData = [
   {
     src: img18,
     title: 'miami_ph_18',
+  },
+  {
+    src: img19,
+    title: 'miami_ph_19',
+  },
+  {
+    src: img20,
+    title: 'miami_ph_20',
   },
 
 ];

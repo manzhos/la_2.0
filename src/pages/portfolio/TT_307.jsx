@@ -1,9 +1,5 @@
 import React from "react";
-import PhotoAlbum from "react-photo-album"; // https://react-photo-album.com/
 import Lightbox from "yet-another-react-lightbox"; // https://yet-another-react-lightbox.com/
-
-import { theme } from '../../component/Theme';
-import useMediaQuery from '@mui/material/useMediaQuery';
 
 import {
   Box,

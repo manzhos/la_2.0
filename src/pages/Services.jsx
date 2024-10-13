@@ -90,7 +90,7 @@ const Services = () => {
               If you have any doubts or questions, please feel free to organize a call with us, we will explain everything and you will understand how easy it can be when you have the right people near.
             </p>
             <div className="spacing-36">&nbsp;</div>
-            <a href="#" className="main-button">Schedule your call</a>
+            <a href="https://calendly.com/d/cmfw-74d-bs5/lazzarotti-discovery-call" className="main-button">Schedule your call</a>
           </Grid>
 
           <Grid item xs={12} sm={6}>
@@ -138,7 +138,7 @@ const Services = () => {
               As you can see from the list of different projects we have already followed during our many years of experience, our Studio is extremely flexible and ready to face any possible task the Client has to offer us. Spanning from commercial properties, to private investments – any challenge is more than welcome and you will find our Studio always ready to any possible request you have.
               </p>
               <div className="spacing-36">&nbsp;</div>
-              <a href="#" className="main-button" style={{ backgroundColor:"#050000" }}>SCHEDULE YOUR CALL </a>
+              <a href="https://calendly.com/d/cmfw-74d-bs5/lazzarotti-discovery-call" className="main-button" style={{ backgroundColor:"#050000" }}>SCHEDULE YOUR CALL </a>
               <div className="spacing-96">&nbsp;</div>
             </Grid>
             <Grid item xs={12} md={6}><img src={serv_02} style={{ width:"100%"}} /></Grid>
@@ -219,7 +219,7 @@ const Services = () => {
         </Grid>
         <div className="spacing-64">&nbsp;</div>
         <div style={{ width:"100%", textAlign:"center" }}>
-          <a href="#"  className="main-text" style={{ textDecoration:"underline" }}>VIEW OUR PORTFOLIO</a>
+          <a href="/portfolio"  className="main-text" style={{ textDecoration:"underline" }}>VIEW OUR PORTFOLIO</a>
         </div>
       </div>
 
@@ -241,7 +241,7 @@ const Services = () => {
                 If you are ready to get started, schedule your complimentary discovery call below.
               </p>
               <div className="spacing-36">&nbsp;</div>
-              <a href="#" className="main-button">SCHEDULE YOUR CALL </a>
+              <a href="https://calendly.com/d/cmfw-74d-bs5/lazzarotti-discovery-call" className="main-button">SCHEDULE YOUR CALL </a>
               <div className="spacing-96">&nbsp;</div>
               <p className="main-text">
                 <i>See our <a href="/faq" className="main-text" style={{ textDecoration:"underline" }}><i>FAQs</i></a> for more general information.</i>

@@ -4,6 +4,9 @@ import {
   Box,
 } from '@mui/material/';
 
+import useMediaQuery from '@mui/material/useMediaQuery';
+import { theme } from '../component/Theme';
+
 import villaRossa from '../public/assets/portfolio/villa_rossa.jpg'
 import miamiPh from '../public/assets/portfolio/miamiPh.jpg'
 import kadima from '../public/assets/portfolio/kadima.jpg'
@@ -26,18 +29,20 @@ import award from '../public/assets/portfolio/ContemporaryLuxuryModern/penthouse
 import busov_video from '../public/assets/portfolio/busov/Busov.mp4';
 
 const PortfolioResidential = () => {
+  const isMobileMode = useMediaQuery(theme.breakpoints.down('sm'));
+  
   return(
     <Box className="container">
       <div className="spacing-128">&nbsp;</div>
       <div className="spacing-64">&nbsp;</div>
-      <div style={{ textAlign:"right" }}><a href="/portfolio"><h3>BACK TO FULL PORTFOLIO</h3></a></div>
+      <div style={{ textAlign: isMobileMode ? "center" : "right" }}><a href="/portfolio"><h3>BACK TO FULL PORTFOLIO</h3></a></div>
       <h2 style={{ textAlign:"center" }}>RESIDENTIAL</h2>
 
       <div className="spacing-64">&nbsp;</div>
 
       <img src={villaRossa} style={{ width:"100%" }} alt="Villa Rossa" />
       <div className="spacing-24">&nbsp;</div>
-      <a href="/portfolio/luxury_villa" className="portfolio-link"><h2>“VILLA ROSE” — LUXURY MODERN VILLA OUTSIDE OF KIEV</h2></a>
+      <a href="/portfolio/luxury_villa" className="portfolio-link"><h2 className="portfolio-link">&laquo;VILLA ROSE&raquo; — LUXURY MODERN VILLA</h2></a>
       <p className="main-text">
         For the “Villa Rose” project, our interior design studio has envisioned the whole property design (interiors, exterior façade, landscape) that is a daring and innovative blend of ancient Italian Classics aesthetics and contemporary luxury elegance.
       </p>
@@ -53,7 +58,7 @@ const PortfolioResidential = () => {
 
       <img src={miamiPh} style={{ width:"100%" }} alt="Miami Penthouse" />
       <div className="spacing-24">&nbsp;</div>
-      <a href="/portfolio/miami_ph" className="portfolio-link"><h2>CORAL GABLES MIAMI PENTHOUSE</h2></a>
+      <a href="/portfolio/miami_ph" className="portfolio-link"><h2 className="portfolio-link">CORAL GABLES MIAMI PENTHOUSE</h2></a>
       <p className="main-text">
         For the Coral Gables Miami Penthouse new design, our interior design studio has envisioned a primary open-space area connecting the Living Room with the Kitchen, full of  aesthetics and contemporary elegance. The space becomes not just a kitchen; it's a new luxury concept of open glass elements showcasing interiors, where new design trends applied to the kitchen meets modern sophistication and luxury.
       </p>
@@ -102,7 +107,7 @@ const PortfolioResidential = () => {
 
       <img src={kadima} style={{ width:"100%" }} alt="South Africa" />
       <div className="spacing-24">&nbsp;</div>
-      <a href="/portfolio/kadima_resort" className="portfolio-link"><h2>KADIMA LAKEVIEW RESORT</h2></a>
+      <a href="/portfolio/kadima_resort" className="portfolio-link"><h2 className="portfolio-link">KADIMA LAKEVIEW RESORT</h2></a>
       <p className="main-text">
         Kadima Lakeview Resort, outside Johannesburg, South Africa is the result of a unique transformation first of all of the external façade and renovated landscape design of the property.
       </p>
@@ -130,7 +135,7 @@ const PortfolioResidential = () => {
 
       <img src={rv} style={{ width:"100%" }} alt="RIVIERA CONTEMPORARY LUXURY VILLA" />
       <div className="spacing-24">&nbsp;</div>
-      <a href="/portfolio/kadima_resort" className="portfolio-link"><h2>RIVIERA CONTEMPORARY LUXURY&nbsp;VILLA</h2></a>
+      <a href="/portfolio/kadima_resort" className="portfolio-link"><h2 className="portfolio-link">RIVIERA CONTEMPORARY LUXURY&nbsp;VILLA</h2></a>
       <p className="main-text">
         Nestled within the tranquil, tree-lined enclave of Riviera Village luxury Home Rerteat, Kiev Region, this exquisite residence exemplifies our design team's prowess in crafting sophisticated, functional, and captivating living spaces tailored to the unique requirements of a modern family. This new completely built from scratch project gave us the opportunity to showcase the best of our style. Drawing inspiration from relaxed yet intricated contemporary aesthetics, clean lines, and a neutral color palette punctuated with thoughtful use color, we have created a refined sanctuary for the family to relish and entertain.
       </p>
@@ -167,7 +172,7 @@ const PortfolioResidential = () => {
 
       <img src={linden} style={{ width:"100%" }} alt="LINDEN LUXURY APARTMENTS – KIEV" />
       <div className="spacing-24">&nbsp;</div>
-      <a href="/portfolio/kadima_resort" className="portfolio-link"><h2>LINDEN LUXURY APARTMENTS – KIEV</h2></a>
+      <a href="/portfolio/kadima_resort" className="portfolio-link"><h2 className="portfolio-link">LINDEN LUXURY APARTMENTS</h2></a>
       <p className="main-text">
         Linden luxury apartment 15-C is a modern yet luxurious property located inside the building complex LINDEN – estimated as the most expensive property apartments in Town.
       </p>
@@ -186,7 +191,7 @@ const PortfolioResidential = () => {
 
       <img src={ed_apt1d} style={{ width:"100%" }} alt="EDELDORF – Apt. 1D" />
       <div className="spacing-24">&nbsp;</div>
-      <a href="/portfolio/edeldorf1d" className="portfolio-link"><h2>EDELDORF – Apt. 1D</h2></a>
+      <a href="/portfolio/edeldorf1d" className="portfolio-link"><h2 className="portfolio-link">EDELDORF – Apt. 1D</h2></a>
 
       <div className="container">
         <div className="spacing-64">&nbsp;</div>
@@ -196,7 +201,7 @@ const PortfolioResidential = () => {
 
       <img src={ed_apt1da} style={{ width:"100%" }} alt="EDELDORF – Apt. 1D A" />
       <div className="spacing-24">&nbsp;</div>
-      <a href="/portfolio/edeldorf1da" className="portfolio-link"><h2>EDELDORF – Apt. 1D A</h2></a>
+      <a href="/portfolio/edeldorf1da" className="portfolio-link"><h2 className="portfolio-link">EDELDORF – Apt. 1D A</h2></a>
 
       <div className="container">
         <div className="spacing-64">&nbsp;</div>
@@ -206,7 +211,7 @@ const PortfolioResidential = () => {
 
       <img src={ed_apt2a} style={{ width:"100%" }} alt="EDELDORF – Apt. 2A" />
       <div className="spacing-24">&nbsp;</div>
-      <a href="/portfolio/edeldorf2a" className="portfolio-link"><h2>EDELDORF – Apt. 2A</h2></a>
+      <a href="/portfolio/edeldorf2a" className="portfolio-link"><h2 className="portfolio-link">EDELDORF – Apt. 2A</h2></a>
 
       <div className="container">
         <div className="spacing-64">&nbsp;</div>
@@ -216,7 +221,7 @@ const PortfolioResidential = () => {
 
       <img src={tt_216} style={{ width:"100%" }} alt="TARYAN TOWERS LUXURY PENTHOUSE" />
       <div className="spacing-24">&nbsp;</div>
-      <a href="/portfolio/tt_216" className="portfolio-link"><h2>TARYAN TOWERS LUXURY PENTHOUSE</h2></a>
+      <a href="/portfolio/tt_216" className="portfolio-link"><h2 className="portfolio-link">TARYAN TOWERS LUXURY PENTHOUSE</h2></a>
       <p className="main-text">
         Located in the most modern building complex of the city of Kiev, Taryan Towers complex, this first Penthouse of 216 total m2 shows a modern look in the interior design selected by our Studio – the use of white natural marble in combination with more neutral beige and brown tones. 
       </p>
@@ -237,7 +242,7 @@ const PortfolioResidential = () => {
           <source src={busov_video} type="video/mp4" />
       </video>
       <div className="spacing-24">&nbsp;</div>
-      <a href="/portfolio/tt_216" className="portfolio-link"><h2>BUSOV HILL</h2></a>
+      <a href="/portfolio/tt_216" className="portfolio-link"><h2 className="portfolio-link">BUSOV HILL</h2></a>
 
       <div className="container">
         <div className="spacing-64">&nbsp;</div>
@@ -247,7 +252,7 @@ const PortfolioResidential = () => {
 
       <div style={{ width:"100%", textAlign:"center" }}><img src={villa_lux} style={{ maxWidth: "640px" }} alt="Villa LUX" /></div>
       <div className="spacing-24">&nbsp;</div>
-      <a href="/portfolio/villalux" className="portfolio-link"><h2>Villa LUX</h2></a>
+      <a href="/portfolio/villalux" className="portfolio-link"><h2 className="portfolio-link">Villa LUX</h2></a>
       <p className="main-text">
         The Villa Lux project is by far the most important and exclusive project we followed so far in the entire career of our design Studio.
         <br />
@@ -270,7 +275,7 @@ const PortfolioResidential = () => {
 
       <img src={tt_161} style={{ width:"100%" }} alt="TARYAN TOWERS MODERN" />
       <div className="spacing-24">&nbsp;</div>
-      <a href="/portfolio/tt_161" className="portfolio-link"><h2>TARYAN TOWERS MODERN</h2></a>
+      <a href="/portfolio/tt_161" className="portfolio-link"><h2 className="portfolio-link">TARYAN TOWERS MODERN</h2></a>
       <p className="main-text">
         A modern and sleek apartment located in the Tower 1 of the modern residential complex Taryan Towers, this apartment of 120 m2 plus external terrace was planned with three total bedrooms and two bathrooms by request of the Client.
         <br/>
@@ -285,7 +290,7 @@ const PortfolioResidential = () => {
 
       <img src={tt_307h} style={{ width:"100%" }} alt="TARYAN TOWERS LUXURY PENTHOUSE" />
       <div className="spacing-24">&nbsp;</div>
-      <a href="/portfolio/tt_307" className="portfolio-link"><h2>TARYAN TOWERS LUXURY PENTHOUSE</h2></a>
+      <a href="/portfolio/tt_307" className="portfolio-link"><h2 className="portfolio-link">TARYAN TOWERS LUXURY PENTHOUSE</h2></a>
       <p className="main-text">
         Introducing one of the most exclusive Penthouses of the entire Kiev city, nestled in the picturesque neighborhood of Taryan Towers in Pechersk district . The inspiration for this project was to seamlessly blend the existing style and charm of the building with fresh finishes and furnishings, creating a harmonious fusion of modern and new. In this second part II of the project, related to the second and biggest Penthouse, located at Floors 32 and 33, we focused on elevating the property to new heights while respecting its unique character and history.
         <br />
@@ -308,7 +313,7 @@ const PortfolioResidential = () => {
 
       <img src={modern_penthouse} style={{ width:"100%" }} alt="Modern Penthouse" />
       <div className="spacing-24">&nbsp;</div>
-      <a href="/portfolio/modern_penthouse" className="portfolio-link"><h2>Modern Penthouse</h2></a>
+      <a href="/portfolio/modern_penthouse" className="portfolio-link"><h2 className="portfolio-link">Modern Penthouse</h2></a>
 
       <div className="container">
         <div className="spacing-64">&nbsp;</div>
@@ -318,7 +323,7 @@ const PortfolioResidential = () => {
 
       <img src={villa_in_pineta} style={{ width:"100%" }} alt="Villa in Pineta" />
       <div className="spacing-24">&nbsp;</div>
-      <a href="/portfolio/villainpineta" className="portfolio-link"><h2>Villa in Pineta</h2></a>
+      <a href="/portfolio/villainpineta" className="portfolio-link"><h2 className="portfolio-link">Villa in Pineta</h2></a>
 
       <div className="container">
         <div className="spacing-64">&nbsp;</div>
@@ -328,7 +333,7 @@ const PortfolioResidential = () => {
 
       <img src={lipinka_house} style={{ width:"100%" }} alt="Lipinka House" />
       <div className="spacing-24">&nbsp;</div>
-      <a href="/portfolio/lipinka_house" className="portfolio-link"><h2>Lipinka House</h2></a>
+      <a href="/portfolio/lipinka_house" className="portfolio-link"><h2 className="portfolio-link">Lipinka House</h2></a>
 
       <div className="container">
         <div className="spacing-64">&nbsp;</div>
@@ -338,7 +343,7 @@ const PortfolioResidential = () => {
 
       <img src={lipinka} style={{ width:"100%" }} alt="Lipinka" />
       <div className="spacing-24">&nbsp;</div>
-      <a href="/portfolio/lipinka" className="portfolio-link"><h2>Lipinka</h2></a>
+      <a href="/portfolio/lipinka" className="portfolio-link"><h2 className="portfolio-link">Lipinka</h2></a>
 
       <div className="container">
         <div className="spacing-64">&nbsp;</div>

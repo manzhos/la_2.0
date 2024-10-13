@@ -32,7 +32,7 @@ const styles = {
   },
   logoContainer: {
     padding: 0,
-    minWidth: '400px',
+    // minWidth: '400px',
     '&:hover': {
       backgroundColor: 'transparent',
     },
@@ -41,7 +41,7 @@ const styles = {
     color:  '#464643',
     height: '30px',
     width:  '30px',
-    marginRight: '15px',
+    // marginRight: '15px',
   },
   menuIconContainer: {
     marginLeft: 'auto',
@@ -85,9 +85,10 @@ const DesktopNavigation = () => {
         <a className="menu-link"      label="Services"      href="/services">Services</a>
         <a className="menu-link"      label="Portfolio"     href="/portfolio">Portfolio</a>
         <a className="menu-link"      label="Press"         href="/press">Press</a>
+        <a className="menu-link"      label="Download"      href="/download">Download</a>
         <a className="menu-link"      label="FAQs"          href="/faq">FAQs</a>
       </div>
-      <a className="menu-btn-link" label="CONSULTATION"  href="/consultation">SCHEDULE&nbsp;A&nbsp;CONSULTATION</a>
+      <a className="menu-btn-link" style={{ marginLeft:"15px" }} label="CONSULTATION"  href="https://calendly.com/d/cmfw-74d-bs5/lazzarotti-discovery-call">SCHEDULE&nbsp;A&nbsp;CONSULTATION</a>
     </div>
   );
 };
@@ -101,29 +102,32 @@ const MobileNavigation = () => {
 
   return (
     <React.Fragment>
-      {openMenuMob && 
-        <div className="menu-mobile">
-          <div className="wrap-menu-mobile">
-            <a className="menu-link-mobile"      label="Home"          href="/">Home</a>
-            <a className="menu-link-mobile"      label="About"         href="/about">About</a>
-            <a className="menu-link-mobile"      label="Services"      href="/services">Services</a>
-            <a className="menu-link-mobile"      label="Portfolio"     href="/portfolio">Portfolio</a>
-            <a className="menu-link-mobile"      label="Press"         href="/press">Press</a>
-            <a className="menu-link-mobile"      label="FAQs"          href="/faqs">FAQs</a>
-            <a className="menu-btn-link-mobile"  label="CONSULTATION"  href="/consultation">SCHEDULE&nbsp;A&nbsp;CONSULTATION</a>            
+      <div style={{ position:"absolute", top:0, right:0 }}>
+        {openMenuMob && 
+          <div className="menu-mobile">
+            <div className="wrap-menu-mobile">
+              <a className="menu-link-mobile"      label="Home"          href="/">Home</a>
+              <a className="menu-link-mobile"      label="About"         href="/about">About</a>
+              <a className="menu-link-mobile"      label="Services"      href="/services">Services</a>
+              <a className="menu-link-mobile"      label="Portfolio"     href="/portfolio">Portfolio</a>
+              <a className="menu-link-mobile"      label="Press"         href="/press">Press</a>
+              <a className="menu-link-mobile"      label="Download"      href="/download">Download</a>
+              <a className="menu-link-mobile"      label="FAQs"          href="/faq">FAQs</a>
+              <a className="menu-btn-link-mobile"  label="CONSULTATION"  href="https://calendly.com/d/cmfw-74d-bs5/lazzarotti-discovery-call" target="_blank">SCHEDULE&nbsp;A&nbsp;CONSULTATION</a>            
+            </div>
           </div>
-        </div>
-      }
-      <IconButton
-        sx={styles.menuIconContainer}
-        onClick={() => setopenMenuMob(!openMenuMob)}
-        disableRipple
-      >
-        {!openMenuMob
-          ? <MenuIcon sx={styles.hamburgerMenuIcon} />
-          : <CloseIcon sx={styles.hamburgerMenuIcon} />
         }
-      </IconButton>
+        <IconButton
+          sx={styles.menuIconContainer}
+          onClick={() => setopenMenuMob(!openMenuMob)}
+          disableRipple
+        >
+          {!openMenuMob
+            ? <MenuIcon sx={styles.hamburgerMenuIcon} />
+            : <CloseIcon sx={styles.hamburgerMenuIcon} />
+          }
+        </IconButton>
+      </div>
     </React.Fragment>
   );
 };
@@ -150,11 +154,12 @@ const Menu = () => {
           >
             {!isMobileMode
             ? <div style={{ height:'140px', margin:'30px' }}>
-                <img src={logo} className="main-menu-logo" alt="logo" />
+                <img src={logo} className="main-menu-logo" alt="lazzarotti-logo" />
               </div>
-            : <div style={{ height:'80px', margin:'15px' }}>
-                <img src={logo} className="main-menu-logo" alt="logo" />
-              </div>}
+            : <div style={{ height:'80px', width:"100vw" }}>
+                <img src={logo} className="main-menu-logo-mob" alt="lazzarotti-logo-mob" />
+              </div>
+            }
           </Button>
           {isMobileMode ? <MobileNavigation /> : <DesktopNavigation />}
         </Toolbar>

@@ -21,29 +21,32 @@ const Footer = () => {
   return (
     <Fragment>
       <div className="spacing-96">&nbsp;</div>
-      <div id="FooterMenuContainer" className="container" style={{ display: "flex", justifyContent: "center", alignItems: "center" }} >
+      <div id="FooterMenuContainer" className="container" style={{ display: "flex", flexDirection: isMobileMode ? "column" : "row", justifyContent: "center", alignItems: "center" }} >
           <a className="menu-link"      label="FAQs"          href="/faq">FAQ</a>
           <a className="menu-link"      label="Services"      href="/services">SERVICES</a>
-          <a className="menu-link"      label="Press"         href="/press">PRESS & ARTICLES</a>
-          <a className="menu-link"      label="Media"         href="/media">MEDIA & DOWNLOAD</a>
+          <a className="menu-link"      label="Press"         href="/press">PRESS</a>
+          {/* <a className="menu-link"      label="Press"         href="/press">PRESS&nbsp;&&nbsp;ARTICLES</a> */}
+          <a className="menu-link"      label="Download"         href="/download">DOWNLOAD</a>
+          {/* <a className="menu-link"      label="Media"         href="/media">MEDIA&nbsp;&&nbsp;DOWNLOAD</a> */}
           <a className="menu-link"      label="Testimonials"  href="/testimonials">TESTIMONIALS</a>
-          <a className="menu-link"      label="Contacts"      href="/contact">CONTACTS</a>
+          {/* <a className="menu-link"      label="Testimonials"  href="/testimonials">TESTIMONIALS</a> */}
+          <a className="menu-link"      label="Contacts"      href="/contacts">CONTACTS</a>
       </div>				
 
       <div className="spacing-96">&nbsp;</div>
 
-      <div id="social" style={{ width: "360px", margin: "0px auto", display: "flex", flexDirection: "row", justifyContent: "space-between" }}>
-        <a href="#">
+      <div id="social" style={{ width: "100%", maxWidth: "180px", margin: "0px auto", display: "flex", flexDirection: isMobileMode ? "column" : "row", justifyContent: "space-between", textAlign: "center" }}>
+        <a href="https://www.instagram.com/lazzarotti_associati/" target='_blank' style={{ margin:"10px 0"}}>
           <img src={ig} style={{ width: "35px", height: "35px" }}/>
         </a>
-        <a href="#">
+        <a href="https://www.facebook.com/simone.lazzarotti" target='_blank' style={{ margin:"10px 0"}}>
           <img src={fb} style={{ width: "35px", height: "35px" }}/>
         </a>
-        <a href="#">
+        {/* <a href="#" target='_blank' style={{ margin:"10px 0"}}>
           <svg height="35px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
             <path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"/>
           </svg>
-        </a>
+        </a> */}
       </div>
 
       <div className="spacing-96">&nbsp;</div>

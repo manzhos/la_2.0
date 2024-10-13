@@ -9,6 +9,9 @@ import PortfolioResidential from './pages/PortfolioResidential'
 import PortfolioCommercial from './pages/PortfolioCommercial';
 import FAQ from './pages/FAQ'
 import Press from './pages/Press'
+import Download from './pages/Download';
+import Testimonials from './pages/Testimonials';
+import Contacts from './pages/Contacts'
 
 import MiamiPH from './pages/portfolio/MiamiPH'
 import LuxuryVilla from './pages/portfolio/LuxuryVilla'
@@ -53,7 +56,10 @@ export const laRoutes = () => {
       <Route path="/portfolio/residential" element={<PortfolioResidential />} />
       <Route path="/portfolio/commercial" element={<PortfolioCommercial />} />
       <Route path="/press" element={<Press />} />
+      <Route path="/download" element={<Download />} />
       <Route path="/faq" element={<FAQ />} />
+      <Route path="/testimonials" element={<Testimonials />} />
+      <Route path="/contacts" element={<Contacts />} />
 
       <Route path="/portfolio/miami_ph" element={<MiamiPH />} />
       <Route path="/portfolio/luxury_villa" element={<LuxuryVilla />} />

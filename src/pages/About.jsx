@@ -279,7 +279,7 @@ const About = () => {
                     We would love to talk with you about your current needs,<br/>your complimentary <b>Discovery Call</b> is just one tap away.
                   </p>
                   <div className="spacing-36">&nbsp;</div>
-                  <a href="#" className="main-button" style={{ backgroundColor:"#050000" }}>SCHEDULE A CONSULTATION</a>
+                  <a href="https://calendly.com/d/cmfw-74d-bs5/lazzarotti-discovery-call" className="main-button" style={{ backgroundColor:"#050000" }}>SCHEDULE A CONSULTATION</a>
                 </div>
               </Grid>
             </Grid>

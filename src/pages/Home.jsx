@@ -47,7 +47,8 @@ const Home = () => {
         <div className="container">
           <div style={{ height:'160px', width:'100%' }}></div>
           <div className="main-video" style={{ backgroundColor: 'gray' }}>
-            <video style={{ width: '100%' }} autoplay="autoplay" controls loop="loop" playsinline="" muted="muted">
+            {/* <video style={{ width: '100%' }} autoplay="autoplay" controls loop="loop" playsinline="" muted="muted"> */}
+            <video style={{ width: '100%' }} autoPlay="autoplay" loop="loop" playsinline="" muted="muted">
                 <source src={mainVideo} type="video/mp4" />
             </video>
           </div>
@@ -63,14 +64,16 @@ const Home = () => {
       <div className="spacing-64">&nbsp;</div>
       <div className="container">
         <Grid container spacing={{ xs: 2, md: 3 }}>
-          <Grid item xs={12} sm={6}>
+          <Grid item xs={12} sm={6} style={{ textAlign:"center"}}>
               <img 
-                style={{ 
-                  // position:"absolute", 
-                  // left:"0", 
-                  width:"100%", 
-                }} 
-              src={pic01} />
+                // style={{ 
+                //   // position:"absolute", 
+                //   // left:"0", 
+                //   width:"78%", 
+                // }} 
+                className="f-work-main"
+                src={pic01}
+              />
           </Grid>
           <Grid item xs={12} sm={6} style={ !isMobileMode ? {paddingLeft:"40px"} : {} } >
             <h2>OUR SERVICES</h2>
@@ -95,29 +98,32 @@ const Home = () => {
       <div className="container">
         <h2 style={{ textAlign:"center" }}>FEATURED WORK</h2>
         <Grid container spacing={{ xs: 2, md: 3 }}>
-          <Grid item xs={12} sm={4}>
+          <Grid item xs={12} sm={4} style={{textAlign:'center'}}>
             <a href="/portfolio/miami_ph" >
               <img src={featureWork01} className="f-work-main"/>
             </a>
-            <a href="/portfolio/miami_ph" className="fw-link">Coral Gables Miami Penthouse</a>
+            <br/>
+            <a href="/portfolio/miami_ph" className="fw-link">Coral Gables Penthouse – MIAMI (USA)</a>
           </Grid>
-          <Grid item xs={12} sm={4}>
+          <Grid item xs={12} sm={4} style={{textAlign:'center'}}>
             <a href="/portfolio/luxury_villa" >
               <img src={featureWork02} className="f-work-main"/>
             </a>
+            <br/>
             <a href="/portfolio/luxury_villa" className="fw-link">Luxury Modern Villa</a>
           </Grid>
-          <Grid item xs={12} sm={4}>
+          <Grid item xs={12} sm={4} style={{textAlign:'center'}}>
             <a href="/portfolio/kadima_resort" >
               <img src={featureWork03} className="f-work-main"/>
             </a>
-            <a href="/portfolio/kadima_resort" className="fw-link">Kadima Lakeview Resort</a>
+            <br/>
+            <a href="/portfolio/kadima_resort" className="fw-link">Kadima Lakeview Resort – South Africa </a>
           </Grid>
         </Grid>
       </div>
       <div className="spacing-64">&nbsp;</div>
       <div style={{ width:"100%", textAlign:"center"}}>
-        <a href="#" className="main-button">VIEW OUR PORTFOLIO</a>
+        <a href="/portfolio" className="main-button">VIEW OUR PORTFOLIO</a>
       </div>
       <div className="spacing-48">&nbsp;</div>
 
@@ -235,7 +241,7 @@ const Home = () => {
         <h2 style={{ marginBottom: "15px" }}>THE FIRST STEP STARTS HERE</h2>
         <h3>HERE’S TO YOUR WAY OF LIVING.</h3>
         <div className="spacing-48">&nbsp;</div>
-        <a href="#" className="main-button">SCHEDULE YOUR CONSULTATION</a>
+        <a href="https://calendly.com/d/cmfw-74d-bs5/lazzarotti-discovery-call" className="main-button">SCHEDULE YOUR CONSULTATION</a>
       </div>
 
       <div className="spacing-96">&nbsp;</div>

@@ -4,8 +4,10 @@ import { useNavigate } from 'react-router-dom';
 import {
   Box,
   ImageList,
-  ImageListItem,
+  ImageListItem
 } from '@mui/material/';
+import useMediaQuery from '@mui/material/useMediaQuery';
+import { theme } from '../component/Theme';
 
 
 import miami_ph       from '../public/assets/portfolio/miami_ph.jpg'
@@ -59,23 +61,34 @@ const itemData = [
 const Portfolio = () => {
   const navigate  = useNavigate();
 
+  const isMobileMode = useMediaQuery(theme.breakpoints.down('sm'));
+
   return(
     <Box className="container">
       <div className="spacing-128">&nbsp;</div>
       <div className="spacing-64">&nbsp;</div>
       <h2 style={{ textAlign:"center" }}>Portfolio</h2>
-      <div style={{ width:"100%", display:"flex", flexDirection:"row", justifyContent:"center" }}>
-        <a href="/portfolio/residential" style={{ textDecoration:"none" }}><h2 style={{ borderBottom:"1px solid black" }}>RESIDENTIAL</h2></a>
-        <h2 style={{ margin:"0 40px" }}>|</h2>
-        <a href="/portfolio/commercial" style={{ textDecoration:"none" }}><h2 style={{ borderBottom:"1px solid black" }}>COMMERCIAL</h2></a>
-      </div>
 
-      <div className="spacing-64">&nbsp;</div>
+      {!isMobileMode ?
+        <div style={{ width:"100%", display:"flex", flexDirection:"row", justifyContent:"center" }}>
+          <a href="/portfolio/residential" style={{ textDecoration:"none" }}><h2 style={{ borderBottom:"1px solid black" }}>RESIDENTIAL</h2></a>
+          <h2 style={{ margin:"0 40px" }}>|</h2>
+          <a href="/portfolio/commercial" style={{ textDecoration:"none" }}><h2 style={{ borderBottom:"1px solid black" }}>COMMERCIAL</h2></a>
+        </div>
+        :
+        <div style={{ width:"100%", display:"flex", flexDirection:"column", justifyContent:"center" }}>
+          <a href="/portfolio/residential" style={{ textDecoration:"none" }}><h2 style={{ textAlign:"center", fontWeight:400 }}>RESIDENTIAL</h2></a>
+          <h2 style={{ textAlign:"center", margin:"-20px 0 0" }}>&mdash;</h2>
+          <a href="/portfolio/commercial" style={{ textDecoration:"none" }}><h2 style={{ textAlign:"center", fontWeight:400 }}>COMMERCIAL</h2></a>
+        </div>
+      }
+
+      {!isMobileMode ?<div className="spacing-64">&nbsp;</div>:<div className="spacing-16">&nbsp;</div>}
 
       <h2 style={{ textAlign:"center" }}>Featured Projects</h2>
-      <img src={villaRossa} style={{ width:"100%" }} alt="Villa Rossa" />
+      <img src={villaRossa} style={{ width:"90%", marginLeft:"5%" }} alt="Villa Rossa" />
       <div className="spacing-24">&nbsp;</div>
-      <a href="/portfolio/luxury_villa" className="portfolio-link"><h2>“VILLA ROSE” — LUXURY MODERN VILLA OUTSIDE OF KIEV</h2></a>
+      <a href="/portfolio/luxury_villa" className="portfolio-link"><h2 className="portfolio-link">&laquo;VILLA ROSE&raquo; — LUXURY MODERN VILLA</h2></a>
       <p className="main-text">
         For the “Villa Rose” project, our interior design studio has envisioned the whole property design (interiors, exterior façade, landscape) that is a daring and innovative blend of ancient Italian Classics aesthetics and contemporary luxury elegance.
       </p>
@@ -89,9 +102,9 @@ const Portfolio = () => {
         <div className="spacing-64">&nbsp;</div>
       </div>
 
-      <img src={miamiPh} style={{ width:"100%" }} alt="Miami Penthouse" />
+      <img src={miamiPh} style={{ width:"90%", marginLeft:"5%" }} alt="Miami Penthouse" />
       <div className="spacing-24">&nbsp;</div>
-      <a href="/portfolio/miami_ph" className="portfolio-link"><h2>CORAL GABLES MIAMI PENTHOUSE</h2></a>
+      <a href="/portfolio/miami_ph" className="portfolio-link"><h2 className="portfolio-link">CORAL GABLES MIAMI PENTHOUSE</h2></a>
       <p className="main-text">
         For the Coral Gables Miami Penthouse new design, our interior design studio has envisioned a primary open-space area connecting the Living Room with the Kitchen, full of  aesthetics and contemporary elegance. The space becomes not just a kitchen; it's a new luxury concept of open glass elements showcasing interiors, where new design trends applied to the kitchen meets modern sophistication and luxury.
       </p>
@@ -121,7 +134,7 @@ const Portfolio = () => {
       <p className="main-text">
         as the WINNER for EAST UKRAINE in 2021-2022 in its category PENTHOUSE as the best of the best.
       </p>
-      <a href="/portfolio/clm" style={{ textDecoration:"underline", textDecorationThickness:"1px", textAlign:"center", color:"black" }}><h2 style={{ marginBottom:"0"}}>Contemporary Luxury Modern</h2></a>
+      <a href="/portfolio/clm" style={{ textDecoration:"none", textDecorationThickness:"1px", textAlign:"center", color:"black" }}><h2 className="portfolio-link" style={{ marginBottom:"0" }}>Contemporary Luxury Modern</h2></a>
       <p className="main-text">
         is the name of the style that our Studio decided to re-invent specifically for this project. 
       </p>
@@ -138,9 +151,9 @@ const Portfolio = () => {
         <div className="spacing-64">&nbsp;</div>
       </div>
 
-      <img src={kadima} style={{ width:"100%" }} alt="South Africa" />
+      <img src={kadima} style={{ width:"90%", marginLeft:"5%" }} alt="South Africa" />
       <div className="spacing-24">&nbsp;</div>
-      <a href="/portfolio/kadima_resort" className="portfolio-link"><h2>KADIMA LAKEVIEW RESORT</h2></a>
+      <a href="/portfolio/kadima_resort" className="portfolio-link"><h2 className="portfolio-link">KADIMA LAKEVIEW RESORT</h2></a>
       <p className="main-text">
         Kadima Lakeview Resort, outside Johannesburg, South Africa is the result of a unique transformation first of all of the external façade and renovated landscape design of the property.
       </p>
@@ -166,9 +179,9 @@ const Portfolio = () => {
         <div className="spacing-64">&nbsp;</div>
       </div>
 
-      <img src={rv} style={{ width:"100%" }} alt="RIVIERA CONTEMPORARY LUXURY VILLA" />
+      <img src={rv} style={{ width:"90%", marginLeft:"5%" }} alt="RIVIERA CONTEMPORARY LUXURY VILLA" />
       <div className="spacing-24">&nbsp;</div>
-      <a href="/portfolio/kadima_resort" className="portfolio-link"><h2>RIVIERA CONTEMPORARY LUXURY&nbsp;VILLA</h2></a>
+      <a href="/portfolio/kadima_resort" className="portfolio-link"><h2 className="portfolio-link">RIVIERA CONTEMPORARY LUXURY&nbsp;VILLA</h2></a>
       <p className="main-text">
         Nestled within the tranquil, tree-lined enclave of Riviera Village luxury Home Rerteat, Kiev Region, this exquisite residence exemplifies our design team's prowess in crafting sophisticated, functional, and captivating living spaces tailored to the unique requirements of a modern family. This new completely built from scratch project gave us the opportunity to showcase the best of our style. Drawing inspiration from relaxed yet intricated contemporary aesthetics, clean lines, and a neutral color palette punctuated with thoughtful use color, we have created a refined sanctuary for the family to relish and entertain.
       </p>
@@ -203,9 +216,9 @@ const Portfolio = () => {
         <div className="spacing-64">&nbsp;</div>
       </div>
 
-      <img src={linden} style={{ width:"100%" }} alt="LINDEN LUXURY APARTMENTS – KIEV" />
+      <img src={linden} style={{ width:"80%", marginLeft:"10%" }} alt="LINDEN LUXURY APARTMENTS" />
       <div className="spacing-24">&nbsp;</div>
-      <a href="/portfolio/kadima_resort" className="portfolio-link"><h2>LINDEN LUXURY APARTMENTS – KIEV</h2></a>
+      <a href="/portfolio/kadima_resort" className="portfolio-link"><h2 className="portfolio-link">LINDEN LUXURY APARTMENTS</h2></a>
       <p className="main-text">
         Linden luxury apartment 15-C is a modern yet luxurious property located inside the building complex LINDEN – estimated as the most expensive property apartments in Town.
       </p>
@@ -222,9 +235,9 @@ const Portfolio = () => {
         <div className="spacing-64">&nbsp;</div>
       </div>
 
-      <img src={ed_apt1d} style={{ width:"100%" }} alt="EDELDORF – Apt. 1D" />
+      <img src={ed_apt1d} style={{ width:"90%", marginLeft:"5%" }} alt="EDELDORF – Apt. 1D" />
       <div className="spacing-24">&nbsp;</div>
-      <a href="/portfolio/edeldorf1d" className="portfolio-link"><h2>EDELDORF – Apt. 1D</h2></a>
+      <a href="/portfolio/edeldorf1d" className="portfolio-link"><h2 className="portfolio-link">EDELDORF – Apt. 1D</h2></a>
       {/* <p className="main-text">
         &nbsp;
       </p> */}
@@ -235,9 +248,9 @@ const Portfolio = () => {
         <div className="spacing-64">&nbsp;</div>
       </div>
 
-      <img src={ed_apt1da} style={{ width:"100%" }} alt="EDELDORF – Apt. 1D A" />
+      <img src={ed_apt1da} style={{ width:"90%", marginLeft:"5%" }} alt="EDELDORF – Apt. 1D A" />
       <div className="spacing-24">&nbsp;</div>
-      <a href="/portfolio/edeldorf1da" className="portfolio-link"><h2>EDELDORF – Apt. 1D A</h2></a>
+      <a href="/portfolio/edeldorf1da" className="portfolio-link"><h2 className="portfolio-link">EDELDORF – Apt. 1D A</h2></a>
       {/* <p className="main-text">
         &nbsp;
       </p> */}
@@ -248,9 +261,9 @@ const Portfolio = () => {
         <div className="spacing-64">&nbsp;</div>
       </div>
 
-      <img src={ed_apt2a} style={{ width:"100%" }} alt="EDELDORF – Apt. 2A" />
+      <img src={ed_apt2a} style={{ width:"90%", marginLeft:"5%" }} alt="EDELDORF – Apt. 2A" />
       <div className="spacing-24">&nbsp;</div>
-      <a href="/portfolio/edeldorf2a" className="portfolio-link"><h2>EDELDORF – Apt. 2A</h2></a>
+      <a href="/portfolio/edeldorf2a" className="portfolio-link"><h2 className="portfolio-link">EDELDORF – Apt. 2A</h2></a>
       {/* <p className="main-text">
         &nbsp;
       </p> */}
@@ -261,9 +274,9 @@ const Portfolio = () => {
         <div className="spacing-64">&nbsp;</div>
       </div>
 
-      <img src={tt_216} style={{ width:"100%" }} alt="TARYAN TOWERS LUXURY PENTHOUSE" />
+      <img src={tt_216} style={{ width:"90%", marginLeft:"5%" }} alt="TARYAN TOWERS LUXURY PENTHOUSE" />
       <div className="spacing-24">&nbsp;</div>
-      <a href="/portfolio/tt_216" className="portfolio-link"><h2>TARYAN TOWERS LUXURY PENTHOUSE</h2></a>
+      <a href="/portfolio/tt_216" className="portfolio-link"><h2 className="portfolio-link">TARYAN TOWERS LUXURY PENTHOUSE</h2></a>
       <p className="main-text">
         Located in the most modern building complex of the city of Kiev, Taryan Towers complex, this first Penthouse of 216 total m2 shows a modern look in the interior design selected by our Studio – the use of white natural marble in combination with more neutral beige and brown tones. 
       </p>
@@ -280,11 +293,12 @@ const Portfolio = () => {
         <div className="spacing-64">&nbsp;</div>
       </div>
 
-      <video style={{ width: '100%' }} controls loop="loop" playsinline="" muted="muted">
+      {/* <video style={{ width: '90%', marginLeft:"5%" }} controls loop="loop" playsinline="" muted="muted"> */}
+      <video style={{ width: '90%', marginLeft:"5%" }} loop="loop" playsinline="" muted="muted">
           <source src={busov_video} type="video/mp4" />
       </video>
       <div className="spacing-24">&nbsp;</div>
-      <a href="/portfolio/tt_216" className="portfolio-link"><h2>BUSOV HILL</h2></a>
+      <a href="/portfolio/tt_216" className="portfolio-link"><h2 className="portfolio-link">BUSOV HILL</h2></a>
       {/* <p className="main-text">
         &nbsp;
       </p> */}
@@ -295,9 +309,9 @@ const Portfolio = () => {
         <div className="spacing-64">&nbsp;</div>
       </div>
 
-      <div style={{ width:"100%", textAlign:"center" }}><img src={villa_lux} style={{ maxWidth: "640px" }} alt="Villa LUX" /></div>
+      <div style={{ width:"100%", textAlign:"center" }}><img src={villa_lux} style={{ width:"100%", maxWidth: "640px" }} alt="Villa LUX" /></div>
       <div className="spacing-24">&nbsp;</div>
-      <a href="/portfolio/villalux" className="portfolio-link"><h2>Villa LUX</h2></a>
+      <a href="/portfolio/villalux" className="portfolio-link"><h2 className="portfolio-link">Villa LUX</h2></a>
       <p className="main-text">
         The Villa Lux project is by far the most important and exclusive project we followed so far in the entire career of our design Studio.
         <br />
@@ -318,9 +332,9 @@ const Portfolio = () => {
         <div className="spacing-64">&nbsp;</div>
       </div>
 
-      <img src={donbass_palace} style={{ width:"100%" }} alt="DONBASS PALACE" />
+      <img src={donbass_palace} style={{ width:"90%", marginLeft:"5%" }} alt="DONBASS PALACE" />
       <div className="spacing-24">&nbsp;</div>
-      <a href="/portfolio/donbass_palace" className="portfolio-link"><h2>DONBASS PALACE</h2></a>
+      <a href="/portfolio/donbass_palace" className="portfolio-link"><h2 className="portfolio-link">DONBASS PALACE</h2></a>
 
       <div className="container">
         <div className="spacing-64">&nbsp;</div>
@@ -328,9 +342,9 @@ const Portfolio = () => {
         <div className="spacing-64">&nbsp;</div>
       </div>
 
-      <img src={parkinn_donetsk} style={{ width:"100%" }} alt="PARK INN DONETSK" />
+      <img src={parkinn_donetsk} style={{ width:"90%", marginLeft:"5%" }} alt="PARK INN DONETSK" />
       <div className="spacing-24">&nbsp;</div>
-      <a href="/portfolio/parkinn_donetsk" className="portfolio-link"><h2>PARK INN DONETSK</h2></a>
+      <a href="/portfolio/parkinn_donetsk" className="portfolio-link"><h2 className="portfolio-link">PARK INN DONETSK</h2></a>
       {/* <p className="main-text">
         
       </p> */}
@@ -341,9 +355,9 @@ const Portfolio = () => {
         <div className="spacing-64">&nbsp;</div>
       </div>
 
-      <img src={tt_161} style={{ width:"100%" }} alt="TARYAN TOWERS MODERN" />
+      <img src={tt_161} style={{ width:"90%", marginLeft:"5%" }} alt="TARYAN TOWERS MODERN" />
       <div className="spacing-24">&nbsp;</div>
-      <a href="/portfolio/tt_161" className="portfolio-link"><h2>TARYAN TOWERS MODERN</h2></a>
+      <a href="/portfolio/tt_161" className="portfolio-link"><h2 className="portfolio-link">TARYAN TOWERS MODERN</h2></a>
       <p className="main-text">
         A modern and sleek apartment located in the Tower 1 of the modern residential complex Taryan Towers, this apartment of 120 m2 plus external terrace was planned with three total bedrooms and two bathrooms by request of the Client.
         <br/>
@@ -356,9 +370,9 @@ const Portfolio = () => {
         <div className="spacing-64">&nbsp;</div>
       </div>
 
-      <img src={tt_307h} style={{ width:"100%" }} alt="TARYAN TOWERS LUXURY PENTHOUSE" />
+      <img src={tt_307h} style={{ width:"90%", marginLeft:"5%" }} alt="TARYAN TOWERS LUXURY PENTHOUSE" />
       <div className="spacing-24">&nbsp;</div>
-      <a href="/portfolio/tt_307" className="portfolio-link"><h2>TARYAN TOWERS LUXURY PENTHOUSE</h2></a>
+      <a href="/portfolio/tt_307" className="portfolio-link"><h2 className="portfolio-link">TARYAN TOWERS LUXURY PENTHOUSE</h2></a>
       <p className="main-text">
         Introducing one of the most exclusive Penthouses of the entire Kiev city, nestled in the picturesque neighborhood of Taryan Towers in Pechersk district . The inspiration for this project was to seamlessly blend the existing style and charm of the building with fresh finishes and furnishings, creating a harmonious fusion of modern and new. In this second part II of the project, related to the second and biggest Penthouse, located at Floors 32 and 33, we focused on elevating the property to new heights while respecting its unique character and history.
         <br />
@@ -379,9 +393,9 @@ const Portfolio = () => {
         <div className="spacing-64">&nbsp;</div>
       </div>
 
-      <img src={cult_luxury} style={{ width:"100%" }} alt="CULT luxury" />
+      <img src={cult_luxury} style={{ width:"90%", marginLeft:"5%" }} alt="CULT luxury" />
       <div className="spacing-24">&nbsp;</div>
-      <a href="/portfolio/cult_luxury" className="portfolio-link"><h2>CULT luxury</h2></a>
+      <a href="/portfolio/cult_luxury" className="portfolio-link"><h2 className="portfolio-link">CULT luxury</h2></a>
       {/* <p className="main-text">
       </p> */}
 
@@ -391,9 +405,9 @@ const Portfolio = () => {
         <div className="spacing-64">&nbsp;</div>
       </div>
 
-      <img src={modern_penthouse} style={{ width:"100%" }} alt="Modern Penthouse" />
+      <img src={modern_penthouse} style={{ width:"90%", marginLeft:"5%" }} alt="Modern Penthouse" />
       <div className="spacing-24">&nbsp;</div>
-      <a href="/portfolio/modern_penthouse" className="portfolio-link"><h2>Modern Penthouse</h2></a>
+      <a href="/portfolio/modern_penthouse" className="portfolio-link"><h2 className="portfolio-link">Modern Penthouse</h2></a>
       {/* <p className="main-text">
       </p> */}
 
@@ -403,9 +417,9 @@ const Portfolio = () => {
         <div className="spacing-64">&nbsp;</div>
       </div>
 
-      <img src={cult_tsum} style={{ width:"100%" }} alt="Cult Tsum" />
+      <img src={cult_tsum} style={{ width:"90%", marginLeft:"5%" }} alt="Cult Tsum" />
       <div className="spacing-24">&nbsp;</div>
-      <a href="/portfolio/cult_tsum" className="portfolio-link"><h2>Cult Tsum</h2></a>
+      <a href="/portfolio/cult_tsum" className="portfolio-link"><h2 className="portfolio-link">Cult Tsum</h2></a>
       {/* <p className="main-text">
       </p> */}
 
@@ -415,9 +429,9 @@ const Portfolio = () => {
         <div className="spacing-64">&nbsp;</div>
       </div>
 
-      <img src={parkinn_kiev} style={{ width:"100%" }} alt="Park Inn — Kiev" />
+      <img src={parkinn_kiev} style={{ width:"90%", marginLeft:"5%" }} alt="Park Inn — Kiev" />
       <div className="spacing-24">&nbsp;</div>
-      <a href="/portfolio/parkinn_kiev" className="portfolio-link"><h2>Park Inn — Kiev</h2></a>
+      <a href="/portfolio/parkinn_kiev" className="portfolio-link"><h2 className="portfolio-link">Park Inn — Kiev</h2></a>
       {/* <p className="main-text">
       </p> */}
 
@@ -427,9 +441,9 @@ const Portfolio = () => {
         <div className="spacing-64">&nbsp;</div>
       </div>
 
-      <img src={villa_in_pineta} style={{ width:"100%" }} alt="Villa in Pineta" />
+      <img src={villa_in_pineta} style={{ width:"90%", marginLeft:"5%" }} alt="Villa in Pineta" />
       <div className="spacing-24">&nbsp;</div>
-      <a href="/portfolio/villainpineta" className="portfolio-link"><h2>Villa in Pineta</h2></a>
+      <a href="/portfolio/villainpineta" className="portfolio-link"><h2 className="portfolio-link">Villa in Pineta</h2></a>
       {/* <p className="main-text">
       </p> */}
 
@@ -439,9 +453,9 @@ const Portfolio = () => {
         <div className="spacing-64">&nbsp;</div>
       </div>
 
-      <img src={lipinka_house} style={{ width:"100%" }} alt="Lipinka House" />
+      <img src={lipinka_house} style={{ width:"90%", marginLeft:"5%" }} alt="Lipinka House" />
       <div className="spacing-24">&nbsp;</div>
-      <a href="/portfolio/lipinka_house" className="portfolio-link"><h2>Lipinka House</h2></a>
+      <a href="/portfolio/lipinka_house" className="portfolio-link"><h2 className="portfolio-link">Lipinka House</h2></a>
       {/* <p className="main-text">
       </p> */}
 
@@ -451,9 +465,9 @@ const Portfolio = () => {
         <div className="spacing-64">&nbsp;</div>
       </div>
 
-      <img src={scm} style={{ width:"100%" }} alt="SCM" />
+      <img src={scm} style={{ width:"90%", marginLeft:"5%" }} alt="SCM" />
       <div className="spacing-24">&nbsp;</div>
-      <a href="/portfolio/scm" className="portfolio-link"><h2>SCM</h2></a>
+      <a href="/portfolio/scm" className="portfolio-link"><h2 className="portfolio-link">SCM</h2></a>
       {/* <p className="main-text">
       </p> */}
 
@@ -463,9 +477,9 @@ const Portfolio = () => {
         <div className="spacing-64">&nbsp;</div>
       </div>
 
-      <img src={donbass_arena} style={{ width:"100%" }} alt="Donbass Arena" />
+      <img src={donbass_arena} style={{ width:"90%", marginLeft:"5%" }} alt="Donbass Arena" />
       <div className="spacing-24">&nbsp;</div>
-      <a href="/portfolio/donbass_arena" className="portfolio-link"><h2>Donbass Arena</h2></a>
+      <a href="/portfolio/donbass_arena" className="portfolio-link"><h2 className="portfolio-link">Donbass Arena</h2></a>
       {/* <p className="main-text">
       </p> */}
 
@@ -475,9 +489,9 @@ const Portfolio = () => {
         <div className="spacing-64">&nbsp;</div>
       </div>
 
-      <img src={ukrinvest} style={{ width:"100%" }} alt="Ukrinvest" />
+      <img src={ukrinvest} style={{ width:"90%", marginLeft:"5%" }} alt="Ukrinvest" />
       <div className="spacing-24">&nbsp;</div>
-      <a href="/portfolio/ukrinvest" className="portfolio-link"><h2>Ukrinvest</h2></a>
+      <a href="/portfolio/ukrinvest" className="portfolio-link"><h2 className="portfolio-link">Ukrinvest</h2></a>
       {/* <p className="main-text">
       </p> */}
 
@@ -487,9 +501,9 @@ const Portfolio = () => {
         <div className="spacing-64">&nbsp;</div>
       </div>
 
-      <img src={stolichni} style={{ width:"100%" }} alt="Stolichni" />
+      <img src={stolichni} style={{ width:"90%", marginLeft:"5%" }} alt="Stolichni" />
       <div className="spacing-24">&nbsp;</div>
-      <a href="/portfolio/stolichni" className="portfolio-link"><h2>Stolichni</h2></a>
+      <a href="/portfolio/stolichni" className="portfolio-link"><h2 className="portfolio-link">Stolichni</h2></a>
       {/* <p className="main-text">
       </p> */}
 
@@ -499,9 +513,9 @@ const Portfolio = () => {
         <div className="spacing-64">&nbsp;</div>
       </div>
 
-      <img src={bayan_palace} style={{ width:"100%" }} alt="Bayan Palace" />
+      <img src={bayan_palace} style={{ width:"70%", marginLeft:"15%" }} alt="Bayan Palace" />
       <div className="spacing-24">&nbsp;</div>
-      <a href="/portfolio/bayan_palace" className="portfolio-link"><h2>Bayan Palace</h2></a>
+      <a href="/portfolio/bayan_palace" className="portfolio-link"><h2 className="portfolio-link">Bayan Palace</h2></a>
       {/* <p className="main-text">
       </p> */}
 
@@ -511,9 +525,9 @@ const Portfolio = () => {
         <div className="spacing-64">&nbsp;</div>
       </div>
 
-      <img src={lipinka} style={{ width:"100%" }} alt="Lipinka" />
+      <img src={lipinka} style={{ width:"90%", marginLeft:"5%" }} alt="Lipinka" />
       <div className="spacing-24">&nbsp;</div>
-      <a href="/portfolio/lipinka" className="portfolio-link"><h2>Lipinka</h2></a>
+      <a href="/portfolio/lipinka" className="portfolio-link"><h2 className="portfolio-link">Lipinka</h2></a>
       {/* <p className="main-text">
       </p> */}
 

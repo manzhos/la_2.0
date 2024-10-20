@@ -3,6 +3,7 @@ import './css/App.css';
 import { laRoutes } from './routes';
 import Menu from './component/Menu'
 import Footer from './component/Footer'
+import TelegramChat from "./component/TelegramChat";
 
 function App() {
   const routes = laRoutes();
@@ -12,6 +13,7 @@ function App() {
       <div id="to_top"></div>
       {routes}
       <Footer />
+      <TelegramChat />
     </div>
   );
 }

@@ -16,14 +16,15 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.7.7",
+    "eslint": "^6.6.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-photo-album": "^2.3.1",
     "react-router-dom": "^6.3",
     "react-scripts": "^5.0.1",
     "web-vitals": "^2.1.4",
-    "yet-another-react-lightbox": "^3.17.1",
-    "eslint": "^6.6.0"
+    "yet-another-react-lightbox": "^3.17.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -41,7 +42,7 @@
     "presets": [
       "@babel/preset-react"
     ]
-  },  
+  },
   "browserslist": {
     "production": [
       "defaults",
@@ -55,8 +56,8 @@
   },
   "devDependencies": {
     "@babel/core": "^7.21.4",
-    "@babel/plugin-proposal-private-property-in-object": "7.21.11",
     "@babel/eslint-parser": "^7.21.3",
+    "@babel/plugin-proposal-private-property-in-object": "7.21.11",
     "eslint": "^8.38.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-config-react-app": "^7.0.1",
@@ -65,9 +66,9 @@
     "eslint-plugin-jsx-a11y": "^6.7.1",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.32.2",
-    "eslint-plugin-react-hooks": "^4.6.0",    
+    "eslint-plugin-react-hooks": "^4.6.0",
     "immutable": "^4.3.0",
     "prettier": "^2.8.7",
     "sass": "^1.53.0"
-  }  
+  }
 }

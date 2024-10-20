@@ -19,7 +19,6 @@ import Standart from '../public/assets/press/Standart-MAG_SL.jpg'
 import interiors from '../public/assets/press/interiors.jpg'
 
 const Press = () => {
-
   const press = [
     {
       title:  'Interiors',

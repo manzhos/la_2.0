@@ -1,7 +1,4 @@
-import React, { useRef, useEffect, useState } from "react";
-
-import { theme } from '../component/Theme';
-import useMediaQuery from '@mui/material/useMediaQuery';
+import React, { useRef } from "react";
 
 import {
   Grid,
@@ -9,16 +6,6 @@ import {
 
 const Contacts = () => {
   const aboutScedule = useRef(null)
-  const isMobileMode = useMediaQuery(theme.breakpoints.down('sm'))
-
-  const [aboutSceduleLeft, setAboutSceduleLeft] = useState('0px')
-
-  const calcAboutSceduleLeft = () => {
-    const windowInnerWidth = window.innerWidth;
-    const aboutSceduleWidth = aboutScedule.current.getBoundingClientRect().width;
-    setAboutSceduleLeft('-' + (windowInnerWidth - aboutSceduleWidth) / 2 + 'px');
-  }
-  useEffect(()=>{calcAboutSceduleLeft()}, [])
 
   return(
     <div id="contacts">

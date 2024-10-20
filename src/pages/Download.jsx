@@ -31,11 +31,15 @@ const Download = () => {
         <hr/>
         <div className="spacing-48">&nbsp;</div>
         <Grid container spacing={4}>
-          <Grid item xs={12} sm={6}>
+          <Grid item xs={12} sm={4}>
             <h1>{'BROCHURE'}</h1>
             <Button onClick={downloadBrochure}>Download</Button>
           </Grid>
-          <Grid item xs={12} sm={6}>
+          <Grid item xs={12} sm={4}>
+            <h1>{'PORTFOLIO'}</h1>
+            <a href="/portfolio"><Button>View online</Button></a>
+          </Grid>
+          <Grid item xs={12} sm={4}>
             <h1>{'SPECS'}</h1>
             <Button onClick={downloadSpecs}>Download</Button>
           </Grid>

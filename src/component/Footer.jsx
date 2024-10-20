@@ -35,9 +35,14 @@ const Footer = () => {
 
       <div className="spacing-96">&nbsp;</div>
 
-      <div id="social" style={{ width: "100%", maxWidth: "180px", margin: "0px auto", display: "flex", flexDirection: isMobileMode ? "column" : "row", justifyContent: "space-between", textAlign: "center" }}>
+      <div id="social" style={{ width: "100%", maxWidth: "240px", margin: "0px auto", display: "flex", flexDirection: isMobileMode ? "column" : "row", justifyContent: "space-between", textAlign: "center" }}>
         <a href="https://www.instagram.com/lazzarotti_associati/" target='_blank' style={{ margin:"10px 0"}}>
           <img src={ig} style={{ width: "35px", height: "35px" }}/>
+        </a>
+        <a href="https://linktr.ee/lazzarotti_architects" target='_blank' style={{ margin:"10px 0"}}>
+          <svg height="35px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="m13.511 5.853 4.005-4.117 2.325 2.381-4.201 4.005h5.909v3.305h-5.937l4.229 4.108-2.325 2.334-5.741-5.769-5.741 5.769-2.325-2.325 4.229-4.108H2V8.122h5.909L3.708 4.117l2.325-2.381 4.005 4.117V0h3.473v5.853zM10.038 16.16h3.473v7.842h-3.473V16.16z"></path>
+          </svg>
         </a>
         <a href="https://www.facebook.com/simone.lazzarotti" target='_blank' style={{ margin:"10px 0"}}>
           <img src={fb} style={{ width: "35px", height: "35px" }}/>

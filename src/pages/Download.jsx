@@ -37,7 +37,7 @@ const Download = () => {
           </Grid>
           <Grid item xs={12} sm={4}>
             <h1>{'PORTFOLIO'}</h1>
-            <a href="/portfolio"><Button>View online</Button></a>
+            <a href="https://lazzarottiassociati.com/portfolio/L&A_portfolio.pdf"><Button>Download</Button></a>
           </Grid>
           <Grid item xs={12} sm={4}>
             <h1>{'SPECS'}</h1>

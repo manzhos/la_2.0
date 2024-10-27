@@ -121,6 +121,9 @@ const Portfolio = () => {
         <div className="spacing-64">&nbsp;</div>
       </div>
 
+      <div className="spacing-24">&nbsp;</div>
+      <a href="/portfolio/clm" className="portfolio-link"><h2 className="portfolio-link">Contemporary Luxury Modern</h2></a>
+
       <video style={{ width: '100%' }} controls loop="loop" playsinline="" muted="muted">
           <source src={clm_video} type="video/mp4" />
       </video>
@@ -181,7 +184,7 @@ const Portfolio = () => {
 
       <img src={rv} style={{ width:"90%", marginLeft:"5%" }} alt="RIVIERA CONTEMPORARY LUXURY VILLA" />
       <div className="spacing-24">&nbsp;</div>
-      <a href="/portfolio/kadima_resort" className="portfolio-link"><h2 className="portfolio-link">RIVIERA CONTEMPORARY LUXURY&nbsp;VILLA</h2></a>
+      <a href="/portfolio/rv_87" className="portfolio-link"><h2 className="portfolio-link">RIVIERA CONTEMPORARY LUXURY&nbsp;VILLA</h2></a>
       <p className="main-text">
         Nestled within the tranquil, tree-lined enclave of Riviera Village luxury Home Rerteat, Kiev Region, this exquisite residence exemplifies our design team's prowess in crafting sophisticated, functional, and captivating living spaces tailored to the unique requirements of a modern family. This new completely built from scratch project gave us the opportunity to showcase the best of our style. Drawing inspiration from relaxed yet intricated contemporary aesthetics, clean lines, and a neutral color palette punctuated with thoughtful use color, we have created a refined sanctuary for the family to relish and entertain.
       </p>
@@ -274,9 +277,9 @@ const Portfolio = () => {
         <div className="spacing-64">&nbsp;</div>
       </div>
 
-      <img src={tt_216} style={{ width:"90%", marginLeft:"5%" }} alt="TARYAN TOWERS LUXURY PENTHOUSE" />
+      <img src={tt_216} style={{ width:"90%", marginLeft:"5%" }} alt="TARYAN TOWERS LUXURY PENTHOUSE I" />
       <div className="spacing-24">&nbsp;</div>
-      <a href="/portfolio/tt_216" className="portfolio-link"><h2 className="portfolio-link">TARYAN TOWERS LUXURY PENTHOUSE</h2></a>
+      <a href="/portfolio/tt_216" className="portfolio-link"><h2 className="portfolio-link">TARYAN TOWERS LUXURY PENTHOUSE I</h2></a>
       <p className="main-text">
         Located in the most modern building complex of the city of Kiev, Taryan Towers complex, this first Penthouse of 216 total m2 shows a modern look in the interior design selected by our Studio – the use of white natural marble in combination with more neutral beige and brown tones. 
       </p>
@@ -298,7 +301,7 @@ const Portfolio = () => {
           <source src={busov_video} type="video/mp4" />
       </video>
       <div className="spacing-24">&nbsp;</div>
-      <a href="/portfolio/tt_216" className="portfolio-link"><h2 className="portfolio-link">BUSOV HILL</h2></a>
+      <a href="/portfolio/busov" className="portfolio-link"><h2 className="portfolio-link">BUSOV HILL</h2></a>
       {/* <p className="main-text">
         &nbsp;
       </p> */}
@@ -370,9 +373,9 @@ const Portfolio = () => {
         <div className="spacing-64">&nbsp;</div>
       </div>
 
-      <img src={tt_307h} style={{ width:"90%", marginLeft:"5%" }} alt="TARYAN TOWERS LUXURY PENTHOUSE" />
+      <img src={tt_307h} style={{ width:"90%", marginLeft:"5%" }} alt="TARYAN TOWERS LUXURY PENTHOUSE II" />
       <div className="spacing-24">&nbsp;</div>
-      <a href="/portfolio/tt_307" className="portfolio-link"><h2 className="portfolio-link">TARYAN TOWERS LUXURY PENTHOUSE</h2></a>
+      <a href="/portfolio/tt_307" className="portfolio-link"><h2 className="portfolio-link">TARYAN TOWERS LUXURY PENTHOUSE II</h2></a>
       <p className="main-text">
         Introducing one of the most exclusive Penthouses of the entire Kiev city, nestled in the picturesque neighborhood of Taryan Towers in Pechersk district . The inspiration for this project was to seamlessly blend the existing style and charm of the building with fresh finishes and furnishings, creating a harmonious fusion of modern and new. In this second part II of the project, related to the second and biggest Penthouse, located at Floors 32 and 33, we focused on elevating the property to new heights while respecting its unique character and history.
         <br />

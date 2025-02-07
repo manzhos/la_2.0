@@ -26,6 +26,8 @@ const TelegramChat = () => {
 
   const sendMessage = async () => {
     const fullMessage = `${userId}: ${message}`
+    // console.log('fullmessage:'. fullMessage);
+    // console.log('fullmessage:'. chatId);
     try {
       await axios.post(telegramApiUrl, {
         chat_id: chatId,
@@ -110,7 +112,10 @@ const TelegramChat = () => {
 
   // start fetch bot answers
   useEffect(() => {
-    const intervalId = setInterval(() => fetchMessages(userId), 4000);
+    const intervalId = setInterval(() => {
+      // console.log('update')
+      fetchMessages(userId)
+    }, 4000);
     return () => clearInterval(intervalId);
   }, [userId]);
 
@@ -163,7 +168,7 @@ const TelegramChat = () => {
           boxShadow: "0 5px 5px 1px rgba(0, 0, 0, 0.5)"
         }}
       >
-        <div style={{ width:"60%", paddingTop:"4px", cursor:"pointer" }} onClick={()=>{console.log('click', open); setOpen(!open)}}>
+        <div style={{ width:"60%", paddingTop:"4px", cursor:"pointer" }} onClick={()=>{setOpen(!open)}}>
           {open ? <CloseIcon /> : <ChatIcon />}
         </div>
         {open &&

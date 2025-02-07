@@ -221,7 +221,7 @@ const Portfolio = () => {
 
       <img src={linden} style={{ width:"80%", marginLeft:"10%" }} alt="LINDEN LUXURY APARTMENTS" />
       <div className="spacing-24">&nbsp;</div>
-      <a href="/portfolio/kadima_resort" className="portfolio-link"><h2 className="portfolio-link">LINDEN LUXURY APARTMENTS</h2></a>
+      <a href="/portfolio/linden" className="portfolio-link"><h2 className="portfolio-link">LINDEN LUXURY APARTMENTS</h2></a>
       <p className="main-text">
         Linden luxury apartment 15-C is a modern yet luxurious property located inside the building complex LINDEN – estimated as the most expensive property apartments in Town.
       </p>

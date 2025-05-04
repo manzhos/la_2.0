@@ -4,6 +4,7 @@ import {
   Grid,
 } from '@mui/material/';
 
+import {URL} from '../config'
 import PressItem from "../component/PressItem";
 
 // content images
@@ -19,12 +20,13 @@ import Standart from '../public/assets/press/Standart-MAG_SL.jpg'
 import interiors from '../public/assets/press/interiors.jpg'
 
 const Press = () => {
+  
   const press = [
     {
       title:  'Interiors',
       date:   '10/2024',
       img:    interiors,
-      link:   "https://drive.google.com/file/d/1FroQxWwcrE2mvNX37FSVZpEk7r-FWL2P/view"
+      link:   `${URL}press/interiors`
     },
     {
       title:  'High Life',

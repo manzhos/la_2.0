@@ -11,7 +11,10 @@ import FAQ from './pages/FAQ'
 import Press from './pages/Press'
 import Download from './pages/Download';
 import Testimonials from './pages/Testimonials';
+import PortfolioPDF from './pages/PortfolioPDF';
 import Contacts from './pages/Contacts'
+
+import InteriorsPDF from './pages/press/Interiors';
 
 import MiamiPH from './pages/portfolio/MiamiPH'
 import LuxuryVilla from './pages/portfolio/LuxuryVilla'
@@ -65,6 +68,7 @@ export const laRoutes = () => {
       <Route path="/download" element={<Download />} />
       <Route path="/faq" element={<FAQ />} />
       <Route path="/testimonials" element={<Testimonials />} />
+      <Route path="/portfolio_pdf" element={<PortfolioPDF />} />
       <Route path="/contacts" element={<Contacts />} />
 
       <Route path="/portfolio/miami_ph" element={<MiamiPH />} />
@@ -97,13 +101,15 @@ export const laRoutes = () => {
       <Route path="/portfolio/ukrinvest" element={<Ukrinvest />} />
       <Route path="/portfolio/stolichni" element={<Stolichni />} />
       <Route path="/portfolio/bayan_palace" element={<BayanPalace />} />
-      
+
       <Route path="/portfolio/tt2_216" element={<TT2_216 />} />
       <Route path="/portfolio/cwc" element={<CWC />} />
       <Route path="/portfolio/bad" element={<BAD />} />
       <Route path="/portfolio/bhp" element={<BHP />} />
       <Route path="/portfolio/bnca" element={<BNCA />} />
       <Route path="/portfolio/bhr" element={<BHR />} />
+
+      <Route path="/press/interiors" element={<InteriorsPDF />} />
 
       {/* Team */}
       <Route path="/team/simon" element={<Simon />} />

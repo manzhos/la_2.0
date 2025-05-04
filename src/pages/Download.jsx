@@ -1,5 +1,5 @@
 import React from "react";
-// import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 import {
   Grid,
@@ -10,16 +10,22 @@ import {URL} from '../config'
 
 
 const Download = () => {
-  // const navigate  = useNavigate()
+  const navigate  = useNavigate()
 
   const downloadSpecs = () => {
     window.top.location = `${URL}/assets/downloads/specs.pdf`
-    // navigate(`${URL}/assets/downloads/specs.pdf`)
   }
 
   const downloadBrochure = () => {
     window.top.location = `${URL}/assets/downloads/Lazzarotti_brochure.pdf`
-    // navigate(`${URL}/assets/downloads/Lazzarotti_brochure.pdf`)
+  }
+
+  const downloadPortfolio = () => {
+    window.top.location = `${URL}/assets/downloads/Portfolio.pdf`
+  }
+
+  const showPortfolio = () => {
+    window.top.location = `${URL}portfolio_pdf`
   }
 
   return(
@@ -35,9 +41,10 @@ const Download = () => {
             <h1>{'BROCHURE'}</h1>
             <Button onClick={downloadBrochure}>Download</Button>
           </Grid>
-          <Grid item xs={12} sm={4}>
+          <Grid item xs={12} sm={4} style={{ display:"flex", flexDirection:"column", justifyContent:"center", alignItems:"center" }}>
             <h1>{'PORTFOLIO'}</h1>
-            <a href="https://lazzarottiassociati.com/portfolio/L&A_portfolio.pdf"><Button>Download</Button></a>
+            <Button onClick={showPortfolio}>View online</Button>
+            <Button onClick={downloadPortfolio}>Download</Button>
           </Grid>
           <Grid item xs={12} sm={4}>
             <h1>{'SPECS'}</h1>

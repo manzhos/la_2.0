@@ -23,6 +23,11 @@ import modern_penthouse from '../public/assets/portfolio/modern_penthouse.jpg'
 import villa_in_pineta from '../public/assets/portfolio/villa_in_pineta.jpg'
 import lipinka_house from '../public/assets/portfolio/lipinka_house.jpg'
 import lipinka from '../public/assets/portfolio/lipinka.jpg'
+import tt2_216 from '../public/assets/portfolio/tt2_216/tt2_216_main.jpg'
+import cwc from '../public/assets/portfolio/classic_winter_chalet/cwc_main.jpg'
+import bad from '../public/assets/portfolio/barc_avendid_diagonal/bad_main.jpg'
+import bhp from '../public/assets/portfolio/barc_hotel_penthouse/bhp_main.jpg'
+import bnca from '../public/assets/portfolio/budapest_neoclassic_appart/bnca_main.jpg'
 
 import clm_video from '../public/assets/portfolio/ContemporaryLuxuryModern/interior_final.mp4';
 import award from '../public/assets/portfolio/ContemporaryLuxuryModern/penthouse_award.png';
@@ -75,8 +80,58 @@ const PortfolioResidential = () => {
         <div className="spacing-64">&nbsp;</div>
       </div>
 
+      <img src={tt2_216} style={{ width:"100%" }} alt="Taryan Tower II" />
       <div className="spacing-24">&nbsp;</div>
-      <a href="/portfolio/clm" className="portfolio-link"><h2 className="portfolio-link">Contemporary Luxury Modern</h2></a>
+      <a href="/portfolio/tt2_216" className="portfolio-link"><h2 className="portfolio-link">TARYAN TOWER II</h2></a>
+
+      <div className="container">
+        <div className="spacing-64">&nbsp;</div>
+          <hr/>
+        <div className="spacing-64">&nbsp;</div>
+      </div>
+
+      <img src={bad} style={{ width:"100%" }} alt="Barcelona Avenid Diagonal" />
+      <div className="spacing-24">&nbsp;</div>
+      <a href="/portfolio/bad" className="portfolio-link"><h2 className="portfolio-link">BARCELONA AVENID DIAGONAL</h2></a>
+
+      <div className="container">
+        <div className="spacing-64">&nbsp;</div>
+          <hr/>
+        <div className="spacing-64">&nbsp;</div>
+      </div>
+
+      <img src={bhp} style={{ width:"100%" }} alt="Barcelona Hotel Penthouse Renovation" />
+      <div className="spacing-24">&nbsp;</div>
+      <a href="/portfolio/bhp" className="portfolio-link"><h2 className="portfolio-link">BARCELONA HOTEL PENTHOUSE RENOVATION</h2></a>
+
+      <div className="container">
+        <div className="spacing-64">&nbsp;</div>
+          <hr/>
+        <div className="spacing-64">&nbsp;</div>
+      </div>
+
+      <img src={cwc} style={{ width:"100%" }} alt="CLASSIC WINTER CHALET" />
+      <div className="spacing-24">&nbsp;</div>
+      <a href="/portfolio/cwc" className="portfolio-link"><h2 className="portfolio-link">CLASSIC WINTER CHALET</h2></a>
+
+      <div className="container">
+        <div className="spacing-64">&nbsp;</div>
+          <hr/>
+        <div className="spacing-64">&nbsp;</div>
+      </div>
+
+      <img src={bnca} style={{ width:"100%" }} alt="Budapest. Neo-Classic apartment" />
+      <div className="spacing-24">&nbsp;</div>
+      <a href="/portfolio/bnca" className="portfolio-link"><h2 className="portfolio-link">BUDAPEST. NEO-CLASSIC APARTMENT</h2></a>
+
+      <div className="container">
+        <div className="spacing-64">&nbsp;</div>
+          <hr/>
+        <div className="spacing-64">&nbsp;</div>
+      </div>
+
+      <div className="spacing-24">&nbsp;</div>
+      <a href="/portfolio/clm" className="portfolio-link"><h2 className="portfolio-link">Contemporary Luxury Modern Penthouse</h2></a>
 
       <video style={{ width: '100%' }} controls loop="loop" playsinline="" muted="muted">
           <source src={clm_video} type="video/mp4" />
@@ -91,7 +146,7 @@ const PortfolioResidential = () => {
       <p className="main-text">
         as the WINNER for EAST UKRAINE in 2021-2022 in its category PENTHOUSE as the best of the best.
       </p>
-      <a href="/portfolio/clm" style={{ textDecoration:"underline", textDecorationThickness:"1px", textAlign:"center", color:"black" }}><h2 style={{ marginBottom:"0"}}>Contemporary Luxury Modern</h2></a>
+      <a href="/portfolio/clm" style={{ textDecoration:"underline", textDecorationThickness:"1px", textAlign:"center", color:"black" }}><h2 style={{ marginBottom:"0"}}>Contemporary Luxury Modern Penthouse</h2></a>
       <p className="main-text">
         is the name of the style that our Studio decided to re-invent specifically for this project. 
       </p>

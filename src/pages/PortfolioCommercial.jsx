@@ -18,6 +18,7 @@ import ukrinvest from '../public/assets/portfolio/ukrinvest.jpg'
 import stolichni from '../public/assets/portfolio/stolichni.jpg'
 import bayan_palace from '../public/assets/portfolio/bayan_palace.jpg'
 import donbass_palace from '../public/assets/portfolio/donbass_palace.jpg'
+import bhr_main from '../public/assets/portfolio/barc_hotel_room/bhr_main.jpg'
 
 const PortfolioCommercial = () => {
   const isMobileMode = useMediaQuery(theme.breakpoints.down('sm'));
@@ -30,6 +31,16 @@ const PortfolioCommercial = () => {
       <h2 style={{ textAlign:"center" }}>COMMERCIAL</h2>
 
       <div className="spacing-64">&nbsp;</div>
+
+      <img src={bhr_main} style={{ width:"100%" }} alt="BARCELONA HOTEL TYPICAL ROOM" />
+      <div className="spacing-24">&nbsp;</div>
+      <a href="/portfolio/bhr" className="portfolio-link"><h2 className="portfolio-link">BARCELONA HOTEL TYPICAL ROOM</h2></a>
+
+      <div className="container">
+        <div className="spacing-64">&nbsp;</div>
+          <hr/>
+        <div className="spacing-64">&nbsp;</div>
+      </div>
 
       <img src={donbass_palace} style={{ width:"100%" }} alt="DONBASS PALACE" />
       <div className="spacing-24">&nbsp;</div>

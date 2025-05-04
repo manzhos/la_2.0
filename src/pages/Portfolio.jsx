@@ -16,7 +16,6 @@ import kadima_resort  from '../public/assets/portfolio/kadima_resort.jpg'
 import rv_87          from '../public/assets/portfolio/rv_87.jpg'
 import tt_307          from '../public/assets/portfolio/tt_307.jpg'
 import amb_vie          from '../public/assets/portfolio/amb_vie.jpg'
-
 import villaRossa from '../public/assets/portfolio/villa_rossa.jpg'
 import miamiPh from '../public/assets/portfolio/miamiPh.jpg'
 import kadima from '../public/assets/portfolio/kadima.jpg'
@@ -43,6 +42,12 @@ import ukrinvest from '../public/assets/portfolio/ukrinvest.jpg'
 import stolichni from '../public/assets/portfolio/stolichni.jpg'
 import bayan_palace from '../public/assets/portfolio/bayan_palace.jpg'
 import donbass_palace from '../public/assets/portfolio/donbass_palace.jpg'
+import bhr_main from '../public/assets/portfolio/barc_hotel_room/bhr_main.jpg'
+import tt2_216 from '../public/assets/portfolio/tt2_216/tt2_216_main.jpg'
+import cwc from '../public/assets/portfolio/classic_winter_chalet/cwc_main.jpg'
+import bad from '../public/assets/portfolio/barc_avendid_diagonal/bad_main.jpg'
+import bhp from '../public/assets/portfolio/barc_hotel_penthouse/bhp_main.jpg'
+import bnca from '../public/assets/portfolio/budapest_neoclassic_appart/bnca_main.jpg'
 
 import clm_video from '../public/assets/portfolio/ContemporaryLuxuryModern/interior_final.mp4';
 import award from '../public/assets/portfolio/ContemporaryLuxuryModern/penthouse_award.png';
@@ -121,8 +126,58 @@ const Portfolio = () => {
         <div className="spacing-64">&nbsp;</div>
       </div>
 
+      <img src={tt2_216} style={{ width:"100%" }} alt="Taryan Tower II" />
       <div className="spacing-24">&nbsp;</div>
-      <a href="/portfolio/clm" className="portfolio-link"><h2 className="portfolio-link">Contemporary Luxury Modern</h2></a>
+      <a href="/portfolio/tt2_216" className="portfolio-link"><h2 className="portfolio-link">TARYAN TOWER II</h2></a>
+
+      <div className="container">
+        <div className="spacing-64">&nbsp;</div>
+          <hr/>
+        <div className="spacing-64">&nbsp;</div>
+      </div>
+
+      <img src={bad} style={{ width:"100%" }} alt="Barcelona Avenid Diagonal" />
+      <div className="spacing-24">&nbsp;</div>
+      <a href="/portfolio/bad" className="portfolio-link"><h2 className="portfolio-link">BARCELONA AVENID DIAGONAL</h2></a>
+
+      <div className="container">
+        <div className="spacing-64">&nbsp;</div>
+          <hr/>
+        <div className="spacing-64">&nbsp;</div>
+      </div>
+
+      <img src={bhp} style={{ width:"100%" }} alt="Barcelona Hotel Penthouse Renovation" />
+      <div className="spacing-24">&nbsp;</div>
+      <a href="/portfolio/bhp" className="portfolio-link"><h2 className="portfolio-link">BARCELONA HOTEL PENTHOUSE RENOVATION</h2></a>
+
+      <div className="container">
+        <div className="spacing-64">&nbsp;</div>
+          <hr/>
+        <div className="spacing-64">&nbsp;</div>
+      </div>
+
+      <img src={cwc} style={{ width:"100%" }} alt="CLASSIC WINTER CHALET" />
+      <div className="spacing-24">&nbsp;</div>
+      <a href="/portfolio/cwc" className="portfolio-link"><h2 className="portfolio-link">CLASSIC WINTER CHALET</h2></a>
+
+      <div className="container">
+        <div className="spacing-64">&nbsp;</div>
+          <hr/>
+        <div className="spacing-64">&nbsp;</div>
+      </div>
+
+      <img src={bnca} style={{ width:"100%" }} alt="Budapest. Neo-Classic apartment" />
+      <div className="spacing-24">&nbsp;</div>
+      <a href="/portfolio/bnca" className="portfolio-link"><h2 className="portfolio-link">BUDAPEST. NEO-CLASSIC APARTMENT</h2></a>
+
+      <div className="container">
+        <div className="spacing-64">&nbsp;</div>
+          <hr/>
+        <div className="spacing-64">&nbsp;</div>
+      </div>
+
+      <div className="spacing-24">&nbsp;</div>
+      <a href="/portfolio/clm" className="portfolio-link"><h2 className="portfolio-link">Contemporary Luxury Modern Penthouse</h2></a>
 
       <video style={{ width: '100%' }} controls loop="loop" playsinline="" muted="muted">
           <source src={clm_video} type="video/mp4" />
@@ -137,7 +192,7 @@ const Portfolio = () => {
       <p className="main-text">
         as the WINNER for EAST UKRAINE in 2021-2022 in its category PENTHOUSE as the best of the best.
       </p>
-      <a href="/portfolio/clm" style={{ textDecoration:"none", textDecorationThickness:"1px", textAlign:"center", color:"black" }}><h2 className="portfolio-link" style={{ marginBottom:"0" }}>Contemporary Luxury Modern</h2></a>
+      <a href="/portfolio/clm" style={{ textDecoration:"none", textDecorationThickness:"1px", textAlign:"center", color:"black" }}><h2 className="portfolio-link" style={{ marginBottom:"0" }}>Contemporary Luxury Modern Penthouse</h2></a>
       <p className="main-text">
         is the name of the style that our Studio decided to re-invent specifically for this project. 
       </p>
@@ -328,6 +383,16 @@ const Portfolio = () => {
         <br />
         The images here are the hand-made concepts, made at the beginning of the project for each individual room to show the style and the materials, colors and furniture employed.
       </p>
+
+      <div className="container">
+        <div className="spacing-64">&nbsp;</div>
+          <hr/>
+        <div className="spacing-64">&nbsp;</div>
+      </div>
+
+      <img src={bhr_main} style={{ width:"100%" }} alt="BARCELONA HOTEL TYPICAL ROOM" />
+      <div className="spacing-24">&nbsp;</div>
+      <a href="/portfolio/bhr" className="portfolio-link"><h2 className="portfolio-link">BARCELONA HOTEL TYPICAL ROOM</h2></a>
 
       <div className="container">
         <div className="spacing-64">&nbsp;</div>

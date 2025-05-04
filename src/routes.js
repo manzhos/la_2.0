@@ -43,6 +43,12 @@ import DonbassArena from './pages/portfolio/DonbassArena';
 import Ukrinvest from './pages/portfolio/Ukrinvest';
 import Stolichni from './pages/portfolio/Stolichni';
 import BayanPalace from './pages/portfolio/BayanPalace';
+import TT2_216 from './pages/portfolio/TT2_216';
+import CWC from './pages/portfolio/CWC';
+import BAD from './pages/portfolio/BAD';
+import BHP from './pages/portfolio/BHP';
+import BNCA from './pages/portfolio/BNCA';
+import BHR from './pages/portfolio/BHR';
 
 import Simon from './pages/team/Simon';
 
@@ -91,7 +97,15 @@ export const laRoutes = () => {
       <Route path="/portfolio/ukrinvest" element={<Ukrinvest />} />
       <Route path="/portfolio/stolichni" element={<Stolichni />} />
       <Route path="/portfolio/bayan_palace" element={<BayanPalace />} />
+      
+      <Route path="/portfolio/tt2_216" element={<TT2_216 />} />
+      <Route path="/portfolio/cwc" element={<CWC />} />
+      <Route path="/portfolio/bad" element={<BAD />} />
+      <Route path="/portfolio/bhp" element={<BHP />} />
+      <Route path="/portfolio/bnca" element={<BNCA />} />
+      <Route path="/portfolio/bhr" element={<BHR />} />
 
+      {/* Team */}
       <Route path="/team/simon" element={<Simon />} />
     </Routes>
   )  

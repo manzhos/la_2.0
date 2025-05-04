@@ -9,10 +9,12 @@ import {
 
 import "yet-another-react-lightbox/styles.css";
 
+import rv_video from '../../public/assets/portfolio/rv_87/rv_87_movie.mp4'
+
 // content images
 const Images    = [],
       itemData  = [];
-for (let i=1; i<=170; i++) {
+for (let i=1; i<=179; i++) {
   Images[i] = require(`../../public/assets/portfolio/rv_87/rv_87_${i}.jpg`)
 }
 Images.map((image, key)=>{
@@ -28,6 +30,13 @@ const RV_87 = () => {
       <div className="spacing-128">&nbsp;</div>
       <div className="spacing-96">&nbsp;</div>
       <h2 style={{ textAlign:"center" }}>RIVIERA CONTEMPORARY LUXURY VILLA</h2>
+      <div className="spacing-24">&nbsp;</div>
+      <div style={{ width:"100%", textAlign:"center"}}>
+        <video style={{ width: '60%' }} controls loop="loop" playsinline="" muted="muted" autoPlay>
+            <source src={rv_video} type="video/mp4" />
+        </video>
+      </div>
+      <div className="spacing-24">&nbsp;</div>
       <ImageList variant="standard" cols={3}>
         {itemData.map((item, key) => (
           <ImageListItem 

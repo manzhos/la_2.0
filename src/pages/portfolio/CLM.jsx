@@ -30,7 +30,7 @@ const CLM = () => {
     <Box className="container">
       <div className="spacing-128">&nbsp;</div>
       <div className="spacing-96">&nbsp;</div>
-      <h2 style={{ textAlign:"center" }}>Contemporary Luxury Modern</h2>
+      <h2 style={{ textAlign:"center" }}>Contemporary Luxury Modern Penthouse</h2>
       <div className="spacing-24">&nbsp;</div>
       <video style={{ width: '100%' }} controls loop="loop" playsinline="" muted="muted">
           <source src={clm_video} type="video/mp4" />
@@ -71,7 +71,7 @@ const CLM = () => {
       <p className="main-text">
         as the WINNER for EAST UKRAINE in 2021-2022 in its category PENTHOUSE as the best of the best.
       </p>
-      <a href="/portfolio/clm" style={{ textDecoration:"underline", textDecorationThickness:"1px", textAlign:"center", color:"black" }}><h2 style={{ marginBottom:"0"}}>Contemporary Luxury Modern</h2></a>
+      <a href="/portfolio/clm" style={{ textDecoration:"underline", textDecorationThickness:"1px", textAlign:"center", color:"black" }}><h2 style={{ marginBottom:"0"}}>Contemporary Luxury Modern Penthouse</h2></a>
       <p className="main-text">
         is the name of the style that our Studio decided to re-invent specifically for this project. 
       </p>

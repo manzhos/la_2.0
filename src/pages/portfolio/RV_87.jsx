@@ -32,7 +32,7 @@ const RV_87 = () => {
       <h2 style={{ textAlign:"center" }}>RIVIERA CONTEMPORARY LUXURY VILLA</h2>
       <div className="spacing-24">&nbsp;</div>
       <div style={{ width:"100%", textAlign:"center"}}>
-        <video style={{ width: '60%' }} controls loop="loop" playsinline="" muted="muted" autoPlay>
+        <video style={{ width: '50%' }} controls loop="loop" playsinline="" muted="muted" autoPlay>
             <source src={rv_video} type="video/mp4" />
         </video>
       </div>

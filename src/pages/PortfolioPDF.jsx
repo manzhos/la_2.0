@@ -19,6 +19,10 @@ const PortfolioPDF = () => {
         <Flipbook pdfUrl={pdfUrl} />
         <div className="spacing-48">&nbsp;</div>
         <hr/>
+        <div className="spacing-24">&nbsp;</div>
+        <a href="https://drive.google.com/file/d/1FroQxWwcrE2mvNX37FSVZpEk7r-FWL2P/view?usp=sharing" style={{ color:"#464643" }}>DOWNLOAD</a>
+        <div className="spacing-24">&nbsp;</div>
+        <hr/>
         <div className="spacing-48">&nbsp;</div>
       </div>
     </div>

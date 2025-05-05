@@ -4,7 +4,6 @@ import {
   Grid,
 } from '@mui/material/';
 
-import {URL} from '../config'
 import PressItem from "../component/PressItem";
 
 // content images
@@ -18,15 +17,29 @@ import grandYachtShow from '../public/assets/press/grand-yacht-show.jpg'
 import hl from '../public/assets/press/hl.jpg'
 import Standart from '../public/assets/press/Standart-MAG_SL.jpg'
 import interiors from '../public/assets/press/interiors.jpg'
+import interview from '../public/assets/press/interview.png'
+import presentation from '../public/assets/press/presentation.png'
 
 const Press = () => {
   
   const press = [
     {
+      title:  'Interview',
+      date:   '05/2024',
+      img:    interview,
+      link:   `https://www.youtube.com/watch?v=c0D9lic4QiQ`
+    },
+    {
+      title:  'Presentation',
+      date:   '05/2024',
+      img:    presentation,
+      link:   `/portfolio/Video_L&A.mp4`
+    },
+    {
       title:  'Interiors',
-      date:   '10/2024',
+      date:   '10/2023',
       img:    interiors,
-      link:   `${URL}press/interiors`
+      link:   `/press/interiors`
     },
     {
       title:  'High Life',

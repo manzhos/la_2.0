@@ -37,6 +37,7 @@ import parkInn      from '../public/assets/awards/parkInn.png'
 import carlson      from '../public/assets/awards/carlson.png'
 import leadHotels   from '../public/assets/awards/leadingHotels.png'
 
+
 const Home = () => {
   
   const isMobileMode = useMediaQuery(theme.breakpoints.down('sm'));
@@ -227,7 +228,7 @@ const Home = () => {
                 This is beauty by design. Download now our DESIGN MAGAZINE to take a glimpse of the world that lies behind the curtains of our STUDIO.
               </p>
               <p className="main-text">
-                <a href="https://drive.google.com/file/d/1FroQxWwcrE2mvNX37FSVZpEk7r-FWL2P/view?usp=sharing" style={{ color:"#464643" }}>DOWNLOAD NOW</a>
+                <a href='/portfolio_pdf' style={{ color:"#464643" }}>VIEW NOW</a>
               </p>
             </Grid>
           </Grid>

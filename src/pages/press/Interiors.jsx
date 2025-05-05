@@ -13,7 +13,7 @@ const Interiors = () => {
       <div style={{ height:'160px', width:'100%' }}></div>
       <div className="container" style={{ textAlign:"center" }}>
         <div className="spacing-64">&nbsp;</div>
-        <h2>{'INTERIORS'}</h2>
+        <h2>{'Interiors Magazine Issue#1'}</h2>
         <hr/>
         <div className="spacing-48">&nbsp;</div>
         <Flipbook pdfUrl={pdfUrl} />
